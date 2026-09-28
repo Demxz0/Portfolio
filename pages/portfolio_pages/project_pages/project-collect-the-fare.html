@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collect the Fare - Projects</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../../../index.html" class="logo">Logo</a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../../main_pages/about.html">About me</a></li>
+                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../../main_pages/experience.html">Experience</a></li>
+                <li><a href="../../main_pages/skills.html">Skills</a></li>
+                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-content project-details">
+        <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+        <h1>Collect the Fare</h1>
+        <div class="project-tags" style="margin-bottom: 2rem;">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">3D</span>
+            <span class="tag">Mobile</span>
+        </div>
+        
+        <section class="project-section">
+            <h2>Overview</h2>
+            <p>Collect the Fare is a 3D mobile game I worked on for 3 months during my internship at Dimensions game studio. It started as a 2-week intern game jam and evolved through two full concept pivots into an Egyptian microbus dodging traffic illegally, Subway Surfers-style. First time using Unity, first time working in 3D.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>My Role and Responsibilities</h2>
+            <p>Main screen UI, camera balance, obstacle logic, sidewalk prop spawning, the after-continue effect, and the passenger pickup/drop-off system. I was treated like a full employee — added to the studio's GitHub org and Jira, running my own scrum tasks.</p>
+        </section>
+        
+        <section class="project-section">
+            <h2>Process & Breakdown</h2>
+            <ul>
+                <li>Main UI and camera balance</li>
+                <li>Obstacle and sidewalk prop spawning</li>
+                <li>Passenger pickup/drop-off system</li>
+                <li>After-continue effect (my custom addition)</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Challenges and Problems Solved</h2>
+            <ul>
+                <li>Getting a pigeon fly-away animation in the prop system to trigger at the right moment — first real 3D animation work.</li>
+                <li>Passenger jump animations clipped through the bus model — fixed by shrinking passengers as they pass through.</li>
+                <li>Learned refactoring firsthand when my initial code had to be rewritten for better architecture by seniors.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>My Impact & Decisions</h2>
+            <p>Instead of copying Subway Surfers' generic "poof-and-go" continue effect, I tied it to the game's own fiction: the van stalls briefly after the crash, then suddenly speeds off. I built it with tweens and added matching vroom/drift SFX into an existing scriptable-object audio system without disrupting it.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Lessons Learned</h2>
+            <ul>
+                <li>Learned Unity and 3D concepts from the ground up</li>
+                <li>Learned proper Git branching and team collaboration</li>
+                <li>Learned to test in isolation using temporary scenes/scripts</li>
+                <li>Learned spawning/pooling systems and real software architecture (singletons, scriptable objects, event bus, state machine, pooling, interfaces)</li>
+            </ul>
+        </section>
+    </main>
+    <aside class="social-links">
+        <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </aside>
+    <script src="../../../js/script.js"></script>
+</body>
+</html>

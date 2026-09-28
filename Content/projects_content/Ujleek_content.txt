@@ -1,0 +1,83 @@
+Ujleek
+
+Overview
+Ujleek is an educational web platform for Gen Z about common mental disorders, built as my graduation project with a team of 5 over 2.5 months. It combines a written platform with an interactive web game, aimed at making mental health information short, easy to digest, and Gen-Z-friendly.
+[📷 Screenshot: homepage]
+[🎥 Clip: site walkthrough]
+
+My Role
+Team lead. Planned the site structure and content architecture, ran Scrum sprints in Jira, taught teammates unfamiliar with GitHub/Jira, ran planning meetings, and built the Unity game myself.
+
+Part 1 — The Website
+
+Team and Process
+Roles: Zain and Doaa on web dev, Raya and Maha on web design. I planned sprints in Jira (sprint 1: design and content). I asked the design team to use Figma; they weren't familiar with it and used Canva instead.
+[📷 Screenshot: Canva design boards]
+
+Decisions
+I noticed early the design direction was off — the team hadn't looked at enough references — but they'd already put in effort and didn't want to redo it, so I let it go. I built the site's structure and content layout myself; the design team turned that into visuals in Canva.
+
+I also planned how mental-disorder content should be broken down (causes, roots, how the brain processes it), then had each teammate pick a disorder to research in a shared document format.
+[📷 Screenshot: one of the research/content docs]
+
+Breakdown
+
+Dev team (React): built to the Canva design, added the 5 disorder pages and a quick 10-question screening quiz per disorder (not a diagnosis)
+Zain: quiz logic (with Raya's help) + every non-disorder page; also proposed and started a chatbot for advice
+Doaa: disorder pages implementation
+
+Challenges and Problems Solved
+
+Zain's chatbot exposed its API key in the frontend — I fixed it by building a backend with an AI coding agent, keeping the key as an environment variable, deployed on both Netlify and Vercel
+[📷 Screenshot: chatbot in action]
+I originally scoped the site to PC/laptop only to keep it manageable for a grad project; the team pushed for mobile too, I agreed — then we found the code wasn't responsive at all. I used Claude Haiku through an AI coding agent to make the whole codebase responsive in one pass, then had the team build on that going forward.
+
+Redesign Pass
+After the full site was built, Zain and I knew something was off, so we redid the main page with better references: moved the nav bar to the right (site is in Arabic), made nav buttons scroll to sections instead of linking directly to pages, turned "Gen Z" into an intro section instead of its own page (Zain's idea), added a nostalgia image slider referenced from Udio's site, used a zig-zag section layout, and moved stats to the bottom (still not sure that was the right call). Got the disorder-page layout design from Claude and had the team adapt it to our theme.
+[📷 Screenshot: before/after of the main page redesign]
+
+(I achieved: a fully responsive, redesigned platform despite the team lacking prior GitHub/Jira/Figma experience, measured by: the site working across PC and mobile with a cohesive design system across 5 disorder pages, by: training the team on tools mid-project, and personally stepping in with AI-assisted fixes for the API key exposure and responsiveness gaps.)
+
+Part 2 — The Game
+
+Overview
+A 3D low-poly prototype focused on Anxiety disorder alone — scoped down from an original idea of one location per disorder, since the goal was to show the concept, not ship a full game.
+[🎥 Clip: full game playthrough]
+
+Design
+Set entirely in a house: people associate certain places with certain disorders (school/park for anxiety, a dark house for depression), and using a house specifically pushes back on a common misconception in the Middle East that these disorders are situational rather than something you carry everywhere — even at home. Also picked house-interior assets partly because that's where free low-poly assets were richest, and I'm not an artist.
+[📷 Screenshot: house exterior/interior]
+
+Two core systems: a breathing UI always on screen (since breath control is a real anxiety tool), and a limited medicine system — only 3 pills, and using one slows movement and blurs vision, signaling it helps but has a cost, and breathing is the better long-term tool.
+[📷 Screenshot: breathing UI + medicine system]
+
+Breakdown — Three Rooms
+
+Attachment Anxiety: a phone call guides a puzzle, then cuts off; anxiety rises to a panic attack unless you find the item the caller pointed at — the lesson being anxiety needs self-reliant reassurance, and a panic attack isn't as dangerous as it feels
+Social Anxiety: judging voices in a dark room; hiding in the bathroom (the avoidant, wrong response) backfires as the voices return; finding a missing light-switch piece lights the room and reveals no one was ever there — social anxiety as a false alarm
+Agoraphobia: locked in a kitchen, vision narrowing; the only way out is to stay still and breathe correctly
+[🎥 Clip: one full room, ideally Social Anxiety since it has the clearest twist]
+
+A narrator explains each disorder after its room, and floating text appears throughout — though I wrote different floating text than what the narrator says in one spot, which confused players (feedback from my brother).
+
+Color Theory
+Orange represents anxiety (referencing Inside Out 2), used across assets and lighting that darkens as anxiety rises. The final room, once you've resolved all three, shifts to blue — orange's opposite — for comfort and closure.
+[📷 Screenshot: orange rooms vs. the final blue room]
+
+Challenges and Problems Solved
+
+First time building a full 3D scene — an oversized house made real-time lights barely visible; diagnosed by turning a light red and moving it to the ground to isolate the scale issue, then shrinking the house
+Started game dev in early April, ~6 weeks before deadline, while still running the rest of the project — ran out of time to animate the Social Anxiety room's people, who stayed static despite implementing (broken) animation logic
+Recorded real voice acting from myself and people I know instead of AI voices, for a more natural feel — in hindsight, scoping a project needing this much voice acting was a mistake
+Code architecture got messy near the end — fixing one script for sound often broke something else
+No optimization knowledge with 1 week left: WebGL export crashed within minutes, Unity Profiler was unfamiliar territory to learn under deadline, and baking lights (dropping the dynamic color-light idea) made the game look flat and turned some objects black — ultimately dropped the browser/WebGL goal entirely
+
+(I achieved: a fully playable 3-room anxiety prototype with a distinct visual/audio identity, measured by: three room mechanics each mapped to a real coping concept, plus custom voice acting and color-coded lighting, by: researching the disorder firsthand and designing every system — breathing, medicine, lighting, color — around what that research actually says.)
+
+Lessons Learned (temporary)
+
+Web: train your team on tools early, don't skip references before committing to a design, scope mobile support deliberately rather than by default
+Game: for browser-based games, go 2D — real-time 3D lighting causes major web-export problems and forces you to cut ideas
+Don't scope voice-heavy content without a realistic plan for recording it
+Keep floating text and narration consistent — mismatched messaging confuses players
+Watch code architecture early; small late-stage fixes cascading into new bugs is a sign it's already too fragile

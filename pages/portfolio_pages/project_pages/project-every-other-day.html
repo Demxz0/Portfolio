@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Other Day - Projects</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../../../index.html" class="logo">Logo</a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../../main_pages/about.html">About me</a></li>
+                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../../main_pages/experience.html">Experience</a></li>
+                <li><a href="../../main_pages/skills.html">Skills</a></li>
+                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-content project-details">
+        <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+        <h1>Every Other Day</h1>
+        <div class="project-tags" style="margin-bottom: 2rem;">
+            <span class="tag">Godot</span>
+            <span class="tag">Simulation</span>
+            <span class="tag">Game Jam</span>
+        </div>
+        
+        <section class="project-section">
+            <h2>Overview</h2>
+            <p>Every Other Day is a 2D Arabic life-balance sim made in Godot for the Nesto game jam (theme: "The world changes slowly"), in 7 days with a team of 2 — me and Leen. You play someone balancing life tasks like work, study, and hobbies; ignore one area too long and it drags you down. The idea came from watching my own and other people's lives constantly trying to balance everything.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>My Role and Responsibilities</h2>
+            <p>All game logic was mine — stats, tasks, events, and the data-driven notebook system. Leen handled art and polish.</p>
+        </section>
+        
+        <section class="project-section">
+            <h2>Process & Breakdown</h2>
+            <p>I wanted the notebook feedback to feel like it had endless outcomes, so I designed a notebook broken into sections, each pulling a line from a data table based on the player's state. I built three data tables (CSV-based) and structured Tasks/Events as script classes.</p>
+            <ul>
+                <li>Data tables: stats, life aspects, events (CSV-based)</li>
+                <li>DataLoader script to import the CSVs</li>
+                <li>Tasks/Events classes as structured arrays</li>
+                <li>Notebook UI pulling feedback per day</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Challenges and Problems Solved</h2>
+            <ul>
+                <li>Picked 6 life aspects based on my own routine, making them too specific and less relatable</li>
+                <li>Had trouble sizing a Scroll node so notebook text fit horizontally</li>
+                <li>The scope was too big for a 7-day jam given the systems involved</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>My Impact & Decisions</h2>
+            <p>I chose not to add visual stat bars on purpose, wanting the player to infer their state from the writing instead of a clear bar, to keep the challenge in place. I achieved a fully data-driven feedback system that could theoretically produce hundreds of narrative outcomes by designing a condition-based sentence-table architecture.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Lessons Learned</h2>
+            <ul>
+                <li>Scope the idea to fit the timeline</li>
+                <li>Don't build around a reference only one teammate knows</li>
+                <li>Learned how "infinite outcome" games are really built</li>
+                <li>Design for the player/audience, not just personal experience</li>
+                <li>Manage time even when life gets busy</li>
+                <li>Never let AI drive the code unreviewed — know your own architecture</li>
+                <li>Pick the platform that fits the gameplay</li>
+            </ul>
+        </section>
+    </main>
+    <aside class="social-links">
+        <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </aside>
+    <script src="../../../js/script.js"></script>
+</body>
+</html>

@@ -1,3 +1,21 @@
+<!--
+OPERATIONAL PURPOSE:
+Renders the personal profile, professional philosophy, key development competencies, and visual vibe carousel for Dima Al-Jundi's game developer portfolio.
+
+INTERNAL MECHANICS:
+- .about-hero-showcase: Flex row placing the circular personal profile (.profile-pic-container) and duo milestone photography cards (.about-side-images) parallel at the top of the page.
+- .about-profile-img: Calibrated object-position (50% 10%) ensuring vertical and horizontal centering of the developer's face inside the circular frame.
+- .about-side-images / .about-img-card: Duo landscape photo cards with responsive framing, rounded borders, and hover elevation effects.
+- .about-tagline / .tagline-highlight: Emphasized primary tagline with glowing accent color on the core action philosophy ('picture, wire, solve.').
+- .about-bio-intro: Hero biographical introduction detailing software engineering foundation and game development rigor.
+- .about-sections-grid / .about-section-card: Modern CSS card grid displaying categorized capabilities, workflow patterns, and personal interests with custom accent markers.
+- .vibe-slider-section: Continuous sliding track displaying visual aesthetic inspirations.
+
+EXTERNAL DEPENDENCIES:
+- Stylesheets: ../../css/style.css, Font Awesome 6.4.0 (all.min.css)
+- Media Assets: ../../Images/Main_page_images/Logo.png, ../../Images/About_images/profile.jpg, ../../Images/About_images/image1.jpg, ../../Images/About_images/image2.JPG
+- Scripts: ../../js/script.js
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +23,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Portfolio</title>
+    <link rel="icon" type="image/png" href="../../Images/Main_page_images/Logo.png">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="../../index.html" class="logo">Logo</a>
+        <a href="../../index.html" class="logo" aria-label="Home">
+            <img src="../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img">
+        </a>
         <nav class="nav-bar">
             <ul>
                 <li><a href="about.html">About me</a></li>
@@ -23,85 +44,92 @@
         </nav>
     </header>
     <main class="page-content">
-        <h1>About Me</h1>
-        <div class="about-grid">
-            <div class="about-left">
+        <h1>What is all about me?</h1>
+
+        <div class="about-hero-showcase">
+            <div class="about-hero-main">
                 <div class="profile-pic-container">
-                    <img src="../../Images/About_images/profile.jpg" alt="Profile Picture"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="../../Images/About_images/profile.jpg" alt="Dima Al-Jundi Profile Picture"
+                        class="about-profile-img">
                 </div>
-                <h2>Who I am</h2>
-                <div class="text-content">
-                    <p><strong>What is all about me?</strong></p>
-                    <p>I close my eyes, picture, wire, solve.</p>
-                    <p>My name is Dima Al-Jundi.</p>
-                    <p>I'm a software engineer with a deep love for games. I don't just play them, I obsess over how
-                        they're built. My background in software engineering gives me a strong foundation in code
-                        quality: I think in terms of code smells, test cases, refactoring, design patterns, and
-                        maintainable systems, and I bring that same rigor into game development.</p>
-
-                    <h3 style="margin-top: 20px; margin-bottom: 10px;">What I Do</h3>
-                    <ul style="padding-left: 20px; margin-bottom: 20px;">
-                        <li>Work across both Godot (GDScript) and Unity (C#), with Godot as my engine of choice.</li>
-                        <li>Have touched nearly every discipline in indie game development, but I'm strongest and most
-                            passionate about gameplay programming and SFX design/manipulation.</li>
-                        <li>Participated in 4 game jams — won 1st place in one, and an award in another.</li>
-                    </ul>
-
-                    <h3 style="margin-top: 20px; margin-bottom: 10px;">How I Work</h3>
-                    <ul style="padding-left: 20px; margin-bottom: 20px;">
-                        <li>Analytical by nature; I enjoy breaking down problems, structuring systems, and organizing
-                            complexity into something manageable.</li>
-                        <li>Natural leader; comfortable dividing tasks, reading people, managing time, and taking
-                            responsibility for outcomes.</li>
-                        <li>Stay calm under pressure; when something breaks unexpectedly, I focus on fixing it rather
-                            than panicking.</li>
-                        <li>Quiet, but talk non-stop once I'm on a topic I know well.</li>
-                        <li>I gamify almost everything, I've even turned my own life into a gamified system in Notion to
-                            manage habits and goals.</li>
-                    </ul>
-
-                    <h3 style="margin-top: 20px; margin-bottom: 10px;">My Process</h3>
-                    <ul style="padding-left: 20px; margin-bottom: 20px;">
-                        <li>I write quick thoughts into Notepad first so nothing gets lost, then get refined into Google
-                            Docs when they need real structure (sometimes with AI help to polish the writing).</li>
-                        <li>I trust my own imagination and game design knowledge over AI for ideation and GDD writing.
-                        </li>
-                        <li>I write and architect my own code so I stay in control of the engineering decisions, but
-                            I'll use AI to speed up repetitive or well-understood implementation work.</li>
-                        <li>In Problem-solving & Debugging I let AI take a first pass on common problems, but if it's
-                            struggling, I step in and solve it myself.</li>
-                    </ul>
-
-                    <h3 style="margin-top: 20px; margin-bottom: 10px;">What am I currently doing?</h3>
-                    <ul style="padding-left: 20px; margin-bottom: 20px;">
-                        <li>Deepening my knowledge of performance optimization and engine profiling.</li>
-                        <li>Learning to build mods, and picking up Roblox Studio and Unreal Editor for Fortnite.</li>
-                        <li>Learning to make multiplayer/co-op games.</li>
-                        <li>Open to full-time roles, contract work, and indie collaborations.</li>
-                    </ul>
-
-                    <h3 style="margin-top: 20px; margin-bottom: 10px;">Outside of Dev</h3>
-                    <ul style="padding-left: 20px; margin-bottom: 20px;">
-                        <li>My hobbies are: Calisthenics, drawing, and cooking.</li>
-                        <li>I've got a strong imagination, always generating ideas and stories which what makes me
-                            always leave Impact.</li>
-                        <li>I'm also into anime, english-series lover, memes.</li>
-                    </ul>
+                <div class="about-hero-text">
+                    <h2 class="about-tagline">I close my eyes, <span class="tagline-highlight">picture, wire, solve.</span></h2>
+                    <div class="about-bio-intro">
+                        <p><strong>My name is Dima Al-Jundi.</strong> I'm a software engineer with a deep love for games. I don't just play them, I obsess over how they're built. My background in software engineering gives me a strong foundation in code quality: I think in terms of code smells, test cases, refactoring, design patterns, and maintainable systems, and I bring that same rigor into game development.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="about-right">
-                <div class="collage-container">
-                    <div class="collage-img collage-img-1">
-                        <img src="../../Images/About_images/image1.jpg" alt="About Image 1"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="collage-img collage-img-2">
-                        <img src="../../Images/About_images/image2.JPG" alt="About Image 2"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
+            
+            <div class="about-side-images">
+                <div class="about-img-card">
+                    <img src="../../Images/About_images/image1.jpg" alt="Dima Al-Jundi Speaking at Game Event"
+                        class="about-side-img about-pres-img">
                 </div>
+                <div class="about-img-card">
+                    <img src="../../Images/About_images/image2.JPG" alt="Dima Al-Jundi Graduation"
+                        class="about-side-img about-grad-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="about-sections-grid">
+            <div class="about-section-card">
+                <h3>What I Do</h3>
+                <ul>
+                    <li>Work across both Godot (GDScript) and Unity (C#), with Godot as my engine of choice.</li>
+                    <li>Have touched nearly every discipline in indie game development, but I'm strongest and most
+                        passionate about gameplay programming and SFX design/manipulation.</li>
+                    <li>Participated in 4 game jams — won 1st place in one, and an award in another.</li>
+                </ul>
+            </div>
+
+            <div class="about-section-card">
+                <h3>How I Work</h3>
+                <ul>
+                    <li>Analytical by nature; I enjoy breaking down problems, structuring systems, and organizing
+                        complexity into something manageable.</li>
+                    <li>Natural leader; comfortable dividing tasks, reading people, managing time, and taking
+                        responsibility for outcomes.</li>
+                    <li>Stay calm under pressure; when something breaks unexpectedly, I focus on fixing it rather
+                        than panicking.</li>
+                    <li>Quiet, but talk non-stop once I'm on a topic I know well.</li>
+                    <li>I gamify almost everything, I've even turned my own life into a gamified system in Notion to
+                        manage habits and goals.</li>
+                </ul>
+            </div>
+
+            <div class="about-section-card">
+                <h3>My Process</h3>
+                <ul>
+                    <li>I write quick thoughts into Notepad first so nothing gets lost, then get refined into Google
+                        Docs when they need real structure (sometimes with AI help to polish the writing).</li>
+                    <li>I trust my own imagination and game design knowledge over AI for ideation and GDD writing.
+                    </li>
+                    <li>I write and architect my own code so I stay in control of the engineering decisions, but
+                        I'll use AI to speed up repetitive or well-understood implementation work.</li>
+                    <li>In Problem-solving & Debugging I let AI take a first pass on common problems, but if it's
+                        struggling, I step in and solve it myself.</li>
+                </ul>
+            </div>
+
+            <div class="about-section-card">
+                <h3>What am I currently doing?</h3>
+                <ul>
+                    <li>Deepening my knowledge of performance optimization and engine profiling.</li>
+                    <li>Learning to build mods, and picking up Roblox Studio and Unreal Editor for Fortnite.</li>
+                    <li>Learning to make multiplayer/co-op games.</li>
+                    <li>Open to full-time roles, contract work, and indie collaborations.</li>
+                </ul>
+            </div>
+
+            <div class="about-section-card">
+                <h3>Outside of Dev</h3>
+                <ul>
+                    <li>My hobbies are: Calisthenics, drawing, and cooking.</li>
+                    <li>I've got a strong imagination, always generating ideas and stories which what makes me
+                        always leave Impact.</li>
+                    <li>I'm also into anime, english-series lover, memes.</li>
+                </ul>
             </div>
         </div>
 
@@ -109,14 +137,12 @@
             <h2>My Vibe</h2>
             <div class="slider-wrapper">
                 <div class="slider-track">
-                    <!-- Original 6 items -->
                     <div class="slide"><img src="https://picsum.photos/200/320?random=1" alt="Vibe"></div>
                     <div class="slide"><img src="https://picsum.photos/200/320?random=2" alt="Vibe"></div>
                     <div class="slide"><img src="https://picsum.photos/200/320?random=3" alt="Vibe"></div>
                     <div class="slide"><img src="https://picsum.photos/200/320?random=4" alt="Vibe"></div>
                     <div class="slide"><img src="https://picsum.photos/200/320?random=5" alt="Vibe"></div>
                     <div class="slide"><img src="https://picsum.photos/200/320?random=6" alt="Vibe"></div>
-                    <!-- Duplicated 6 items for infinite scroll effect -->
                     <div class="slide"><img src="https://picsum.photos/200/320?random=1" alt="Vibe"></div>
                     <div class="slide"><img src="https://picsum.photos/200/320?random=2" alt="Vibe"></div>
                     <div class="slide"><img src="https://picsum.photos/200/320?random=3" alt="Vibe"></div>

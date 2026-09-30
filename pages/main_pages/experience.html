@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header">
         <a href="../../index.html" class="logo" aria-label="Home">
@@ -25,31 +27,70 @@
     </header>
     <main class="page-content">
         <h1>Experience</h1>
-        <div class="experience-list">
-            <div class="experience-item">
-                <h3>Lead Game Designer</h3>
-                <p><strong>Studio Name</strong> | Jan 2024 - Present</p>
-                <p>Designed core mechanics and balanced gameplay loops for an unannounced project.</p>
+        <div class="toggle-wrapper">
+            <div class="toggle-container">
+                <button class="toggle-btn active" id="btn-work" onclick="switchExperience('work')">Work</button>
+                <button class="toggle-btn" id="btn-education" onclick="switchExperience('education')">Education</button>
             </div>
-            <div class="experience-item">
-                <h3>Gameplay Programmer</h3>
-                <p><strong>Another Studio</strong> | Mar 2022 - Dec 2023</p>
-                <p>Implemented player controllers, AI behaviors, and UI systems.</p>
+        </div>
+
+        <div id="work-content" class="experience-list">
+            <div class="experience-item reveal">
+                <div class="experience-content">
+                    <h3>Indie Game Developer</h3>
+                    <p><strong>Self-employed</strong> | 2026 - Present</p>
+                    <ul>
+                        <li>Ranked 1st place by participant vote at the AUB gaming academy summer program with Kitchen Nightmare, a first-person 3D cooking game built with 1 teammate.</li>
+                        <li>Built the game's logic and architecture in 1 month, by setting 4 rules before coding (composition, data-driven design, event bus, one reusable state machine). This produced a 3-level prototype that can keep growing.</li>
+                        <li>Solved held items clipping through walls and objects, by adding a second camera that renders only held items.</li>
+                        <li>Won 1st place among 15+ participants at a game jam with Airport Security (team of 3, 1.5 days), by building all the game logic and writing the dialogue.</li>
+                    </ul>
+                    <a href="../portfolio_pages/project_pages/project-kitchen-nightmare.html" class="experience-btn">View Project &rarr;</a>
+                </div>
             </div>
-            <div class="experience-item">
-                <h3>Indie Developer</h3>
-                <p><strong>Self-Employed</strong> | 2020 - 2022</p>
-                <p>Released 3 small games on itch.io participating in various game jams.</p>
+            <div class="experience-item reveal">
+                <div class="experience-content">
+                    <h3>Game Developer</h3>
+                    <p><strong>Dimensions Game Studio</strong> | Jan 2026 - Mar 2026</p>
+                    <ul>
+                        <li>Built a game jam prototype with a studio employee that beat 7+ teams and became the studio's full 3D mobile game, by designing the player movement, camera, and puzzle system.</li>
+                        <li>Completed 30+ Jira tasks in 3 months as a full team member, by working through the studio's scrum workflow and pushing to the official GitHub repo with proper branching.</li>
+                        <li>Delivered the passenger pickup/drop-off, obstacle logic, sidewalk prop spawning, and main screen UI in my first Unity and first 3D project, by learning Unity through docs and building isolated test scenes for each system.</li>
+                        <li>Created the game's "after continue" effect (van stalls, then speeds off), by building a tween-based scene with matching SFX that plugged into a teammate's audio system without changing it.</li>
+                    </ul>
+                    <a href="../portfolio_pages/project_pages/project-collect-the-fare.html" class="experience-btn">View Project &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="education-content" class="experience-list" style="display: none;">
+            <div class="experience-item reveal">
+                <div class="experience-content">
+                    <h3>Bachelor in Software Engineering</h3>
+                    <p><strong>AL-Balqa Applied University</strong> | 2022 - 2026</p>
+                    <ul>
+                        <li>Graduated with a GPA of 3.37/4 (Very Good).</li>
+                        <li>Earned a full mark (A) on the graduation project, Ujleek, a mental health education website and game for Gen Z, by leading a team of 5 through Scrum sprints in Jira over about 2.5 months.</li>
+                        <li>Covered 5 mental disorders on the site, each with a 10-question quiz, by setting one content structure for the whole team.</li>
+                        <li>Built a 3D anxiety game with 3 rooms, one per type of anxiety, by writing the GDD and building it in Unity.</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Core coursework:</strong> Requirements Engineering, Software Design, Project Planning, Design Patterns, Software Testing, Algorithms, Data Structures, Maintenance, Components Reuse.</p>
+                    <a href="../portfolio_pages/project_pages/project-ujleek.html" class="experience-btn">View Project &rarr;</a>
+                </div>
             </div>
         </div>
     </main>
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
-        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
         <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </aside>
     <script src="../../js/script.js"></script>
 </body>
+
 </html>

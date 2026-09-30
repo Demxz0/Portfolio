@@ -339,3 +339,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Global function for experience page toggling
+window.switchExperience = function(type) {
+    const btnWork = document.getElementById('btn-work');
+    const btnEducation = document.getElementById('btn-education');
+    const workContent = document.getElementById('work-content');
+    const educationContent = document.getElementById('education-content');
+
+    if (!btnWork || !btnEducation || !workContent || !educationContent) return;
+
+    if (type === 'work') {
+        btnWork.classList.add('active');
+        btnEducation.classList.remove('active');
+        workContent.style.display = 'block';
+        educationContent.style.display = 'none';
+    } else {
+        btnEducation.classList.add('active');
+        btnWork.classList.remove('active');
+        educationContent.style.display = 'block';
+        workContent.style.display = 'none';
+    }
+};

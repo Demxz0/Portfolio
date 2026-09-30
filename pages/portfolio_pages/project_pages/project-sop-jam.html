@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header">
         <a href="../../../index.html" class="logo" aria-label="Home">
@@ -23,28 +25,45 @@
             </ul>
         </nav>
     </header>
-    <main class="page-content project-details">
-        <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
-        <h1>Sop Jam 2026</h1>
-        <div class="project-tags" style="margin-bottom: 2rem;">
-            <span class="tag">Godot</span>
-            <span class="tag">3D</span>
-            <span class="tag">Solo</span>
+
+    <div class="project-video-hero">
+        <video class="project-hero-video" autoplay muted loop playsinline>
+            <source src="../../../Videos/thermal_panic_hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="project-hero-gradient"></div>
+        <div class="project-hero-content">
+            <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+            <h1>Sop Jam 2026</h1>
+            <div class="project-tags">
+                <span class="tag">Godot</span>
+                <span class="tag">3D</span>
+                <span class="tag">Solo</span>
+            </div>
         </div>
-        
+        <div class="project-hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-hint-line"></div>
+        </div>
+    </div>
+
+    <main class="page-content project-details">
+
         <section class="project-section">
             <h2>Overview</h2>
-            <p>This was my first solo game jam — Sop Game Jam 2026, theme "the critical point," 5 days, built in Godot 3D. Inspired by Buckshot Roulette, the concept: figure out if the person across from you is human or AI by pushing them to their breaking point.</p>
+            <p>This was my first solo game jam — Sop Game Jam 2026, theme "the critical point," 5 days, built in Godot
+                3D. Inspired by Buckshot Roulette, the concept: figure out if the person across from you is human or AI
+                by pushing them to their breaking point.</p>
         </section>
 
         <section class="project-section">
             <h2>My Role and Responsibilities</h2>
             <p>Solo project — everything: design, systems, dialogue, sound.</p>
         </section>
-        
+
         <section class="project-section">
             <h2>Process & Breakdown</h2>
-            <p>I kept the whole game in a single scene on purpose, so I wouldn't burn time building environments and could focus entirely on the core idea.</p>
+            <p>I kept the whole game in a single scene on purpose, so I wouldn't burn time building environments and
+                could focus entirely on the core idea.</p>
             <ul>
                 <li>Core loop: ask emotional or logical questions within a 90-second timer.</li>
                 <li>Breaking an AI needs: Emotional &rarr; Logical &rarr; Emotional &rarr; Logical.</li>
@@ -57,14 +76,17 @@
             <h2>Challenges and Problems Solved</h2>
             <ul>
                 <li>Didn't document much early on, which let ideas blur together.</li>
-                <li>The game manager ended up as a long chain of if/else statements — recognized this wasn't a good way to structure it.</li>
+                <li>The game manager ended up as a long chain of if/else statements — recognized this wasn't a good way
+                    to structure it.</li>
                 <li>Scope crept steadily even though the starting idea was simple.</li>
             </ul>
         </section>
 
         <section class="project-section">
             <h2>My Impact & Decisions</h2>
-            <p>I achieved a fully working interrogation-logic system with two distinct correct sequences, an unreliable-narrator dialogue layer, and a working true/bad ending split in just 5 days by scoping the environment down to almost nothing.</p>
+            <p>I achieved a fully working interrogation-logic system with two distinct correct sequences, an
+                unreliable-narrator dialogue layer, and a working true/bad ending split in just 5 days by scoping the
+                environment down to almost nothing.</p>
         </section>
 
         <section class="project-section">
@@ -79,11 +101,15 @@
     </main>
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
-        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
         <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </aside>
     <script src="../../../js/script.js"></script>
 </body>
+
 </html>

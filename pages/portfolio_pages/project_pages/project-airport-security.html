@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header">
         <a href="../../../index.html" class="logo" aria-label="Home">
@@ -23,53 +25,83 @@
             </ul>
         </nav>
     </header>
-    <main class="page-content project-details">
-        <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
-        <h1>Airport Security</h1>
-        <div class="project-tags" style="margin-bottom: 2rem;">
-            <span class="tag">Godot</span>
-            <span class="tag">2D</span>
-            <span class="tag">Puzzle</span>
+
+    <div class="project-video-hero">
+        <video class="project-hero-video" autoplay muted loop playsinline>
+            Drop your gameplay video here:
+            <source src="../../../Videos/airport_security_hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="project-hero-gradient"></div>
+        <div class="project-hero-content">
+            <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+            <h1>Airport Security</h1>
+            <div class="project-tags">
+                <span class="tag">Godot</span>
+                <span class="tag">2D</span>
+                <span class="tag">Puzzle</span>
+            </div>
         </div>
-        
+        <div class="project-hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-hint-line"></div>
+        </div>
+    </div>
+
+    <main class="page-content project-details">
+
         <section class="project-section">
             <h2>Overview</h2>
-            <p>Airport Security is a 2D puzzle game made for a Godot game jam themed "2D puzzle" — and it won 1st place. Team of 3: me, Leen, and Zaid, built in a day and a half. You play a new intern in airport security, and an officer tests you by finding the smuggler among 3 characters — checking bags, ID, passport, and talking to suspects.</p>
+            <p>Airport Security is a 2D puzzle game made for a Godot game jam themed "2D puzzle" — and it won 1st place.
+                Team of 3: me, Leen, and Zaid, built in a day and a half. You play a new intern in airport security, and
+                an officer tests you by finding the smuggler among 3 characters — checking bags, ID, passport, and
+                talking to suspects.</p>
         </section>
 
         <section class="project-section">
             <h2>Concept and Decisions</h2>
-            <p>Leen suggested the concept from National Geographic's "Airport Security" show, I suggested the gameplay style from "That's Not My Neighbor." We only had half a day to plan, so we agreed fast: I'd take full game logic, Leen art and polish, Zaid the main menu. We also agreed to build the whole logic first with placeholder art (skeleton technique), and to reuse a dialogue/settings system I'd already built in an earlier game to save time.</p>
+            <p>Leen suggested the concept from National Geographic's "Airport Security" show, I suggested the gameplay
+                style from "That's Not My Neighbor." We only had half a day to plan, so we agreed fast: I'd take full
+                game logic, Leen art and polish, Zaid the main menu. We also agreed to build the whole logic first with
+                placeholder art (skeleton technique), and to reuse a dialogue/settings system I'd already built in an
+                earlier game to save time.</p>
         </section>
 
         <section class="project-section">
             <h2>My Role and Responsibilities</h2>
-            <p>Full game logic: UI interactables, the dialogue system, the smuggler-voting mechanic, and the intro/win/lose scenes — including writing all the dialogue.</p>
+            <p>Full game logic: UI interactables, the dialogue system, the smuggler-voting mechanic, and the
+                intro/win/lose scenes — including writing all the dialogue.</p>
         </section>
-        
+
         <section class="project-section">
             <h2>Process & Breakdown</h2>
-            <ul>
-                <li>UI interactables built with placeholder art first</li>
-                <li>Reused dialogue system for suspect conversations</li>
-                <li>Voting mechanic using Godot's group system (radio buttons)</li>
-                <li>Intro/win/lose dialogue scenes (my addition)</li>
-                <li>Difficulty design: officer briefs the player on clues to watch for; distractors like a dog reacting to food on an innocent character, or a suspiciously talkative character</li>
-            </ul>
+            <p>
+                I started by building UI interactables with blocking-out technique.
+                I reused dialogue system from previous game.
+                I made the voting mechanic using Godot's group system (radio buttons).
+                Then I added the intro/win/lose dialogue scenes.
+                I also designed the difficulty: officer briefs the player on clues to watch for; distractors like a dog
+                reacting to food on an innocent character, or a suspiciously talkative character.
+            </p>
         </section>
 
         <section class="project-section">
             <h2>Challenges and Problems Solved</h2>
             <ul>
-                <li>Tons of Git merge conflicts on .tscn scene files while still learning branches — some fixes even corrupted scenes, fixed with AI's help</li>
-                <li>Bag-search was meant to use dragging to reveal items, but ran out of time — swapped to a visible zip bag on one character instead</li>
-                <li>Some buttons broke under time pressure, so instead of one shared button script, ended up writing a separate script per button just to make it work in time</li>
+                <li>Tons of Git merge conflicts on .tscn scene files while still learning branches — some fixes even
+                    corrupted scenes, fixed with AI's help</li>
+                <li>Bag-search was meant to use dragging to reveal items, but ran out of time — swapped to a visible zip
+                    bag on one character instead</li>
+                <li>Some buttons broke under time pressure, so instead of one shared button script, ended up writing a
+                    separate script per button just to make it work in time</li>
             </ul>
         </section>
 
         <section class="project-section">
             <h2>My Impact</h2>
-            <p>Owned the entire game logic and turned a flat win/lose structure into a small narrative with a clear character role (the intern), which shaped how the whole game is framed. I achieved 1st place in the jam by building a full interactive logic layer in 1.5 days using a skeleton-first approach and reusing prior systems.</p>
+            <p>Owned the entire game logic and turned a flat win/lose structure into a small narrative with a clear
+                character role (the intern), which shaped how the whole game is framed. I achieved 1st place in the jam
+                by building a full interactive logic layer in 1.5 days using a skeleton-first approach and reusing prior
+                systems.</p>
         </section>
 
         <section class="project-section">
@@ -88,11 +120,15 @@
     </main>
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
-        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
         <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </aside>
     <script src="../../../js/script.js"></script>
 </body>
+
 </html>

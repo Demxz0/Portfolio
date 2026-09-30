@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header">
         <a href="../../../index.html" class="logo" aria-label="Home">
@@ -23,34 +25,57 @@
             </ul>
         </nav>
     </header>
-    <main class="page-content project-details">
-        <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
-        <h1>Ujleek</h1>
-        <div class="project-tags" style="margin-bottom: 2rem;">
-            <span class="tag">Unity</span>
-            <span class="tag">React</span>
-            <span class="tag">Web</span>
+
+    <div class="project-video-hero">
+        <video class="project-hero-video" autoplay muted loop playsinline>
+            <source src="../../../Videos/ujleek_hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="project-hero-gradient"></div>
+        <div class="project-hero-content">
+            <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+            <h1>Ujleek</h1>
+            <div class="project-tags">
+                <span class="tag">Unity</span>
+                <span class="tag">React</span>
+                <span class="tag">Web</span>
+            </div>
         </div>
-        
+        <div class="project-hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-hint-line"></div>
+        </div>
+    </div>
+
+    <main class="page-content project-details">
+
         <section class="project-section">
             <h2>Overview</h2>
-            <p>Ujleek is an educational web platform for Gen Z about common mental disorders, built as my graduation project with a team of 5 over 2.5 months. It combines a written platform with an interactive web game, aimed at making mental health information short, easy to digest, and Gen-Z-friendly.</p>
+            <p>Ujleek is an educational web platform for Gen Z about common mental disorders, built as my graduation
+                project with a team of 5 over 2.5 months. It combines a written platform with an interactive web game,
+                aimed at making mental health information short, easy to digest, and Gen-Z-friendly.</p>
         </section>
 
         <section class="project-section">
             <h2>My Role and Responsibilities</h2>
-            <p>Team lead. Planned the site structure and content architecture, ran Scrum sprints in Jira, taught teammates unfamiliar with GitHub/Jira, ran planning meetings, and built the Unity game myself.</p>
+            <p>Team lead. Planned the site structure and content architecture, ran Scrum sprints in Jira, taught
+                teammates unfamiliar with GitHub/Jira, ran planning meetings, and built the Unity game myself.</p>
         </section>
-        
+
         <section class="project-section">
             <h2>Part 1 — The Website</h2>
-            <p>I built the site's structure and content layout; the dev team built to the design and added disorder pages and screening quizzes. I fixed critical issues like exposed API keys by building a backend, and stepped in to make the entire site responsive in one pass using an AI coding agent.</p>
-            <p><strong>Redesign:</strong> After the initial build, we redid the main page with better UX, moving the nav bar, adding smooth scrolling, a nostalgia image slider, and improving the layout of disorder pages.</p>
+            <p>I built the site's structure and content layout; the dev team built to the design and added disorder
+                pages and screening quizzes. I fixed critical issues like exposed API keys by building a backend, and
+                stepped in to make the entire site responsive in one pass using an AI coding agent.</p>
+            <p><strong>Redesign:</strong> After the initial build, we redid the main page with better UX, moving the nav
+                bar, adding smooth scrolling, a nostalgia image slider, and improving the layout of disorder pages.</p>
         </section>
 
         <section class="project-section">
             <h2>Part 2 — The Game</h2>
-            <p>A 3D low-poly prototype focused on Anxiety disorder. Set in a house to show that disorders are carried everywhere, including home. It features a breathing UI, a limited medicine system (3 pills with visual costs to emphasize breathing as a better long-term tool), and three rooms focusing on Attachment Anxiety, Social Anxiety, and Agoraphobia.</p>
+            <p>A 3D low-poly prototype focused on Anxiety disorder. Set in a house to show that disorders are carried
+                everywhere, including home. It features a breathing UI, a limited medicine system (3 pills with visual
+                costs to emphasize breathing as a better long-term tool), and three rooms focusing on Attachment
+                Anxiety, Social Anxiety, and Agoraphobia.</p>
             <p>Used color theory (orange for anxiety, blue for closure) and custom voice acting.</p>
         </section>
 
@@ -58,28 +83,36 @@
             <h2>Challenges and Problems Solved</h2>
             <ul>
                 <li>Team lacked GitHub/Jira experience, required teaching tools mid-project.</li>
-                <li>First time building a full 3D scene — real-time lighting issues forced me to scale down the house.</li>
-                <li>Performance problems with WebGL forced us to drop the browser goal for the game entirely due to time constraints.</li>
+                <li>First time building a full 3D scene — real-time lighting issues forced me to scale down the house.
+                </li>
+                <li>Performance problems with WebGL forced us to drop the browser goal for the game entirely due to time
+                    constraints.</li>
             </ul>
         </section>
 
         <section class="project-section">
             <h2>Lessons Learned</h2>
             <ul>
-                <li>Web: train your team on tools early, don't skip references before committing to a design, scope mobile support deliberately.</li>
+                <li>Web: train your team on tools early, don't skip references before committing to a design, scope
+                    mobile support deliberately.</li>
                 <li>Game: for browser-based games, go 2D — real-time 3D lighting causes major web-export problems.</li>
                 <li>Don't scope voice-heavy content without a realistic plan for recording it.</li>
-                <li>Watch code architecture early; small late-stage fixes cascading into new bugs is a sign it's too fragile.</li>
+                <li>Watch code architecture early; small late-stage fixes cascading into new bugs is a sign it's too
+                    fragile.</li>
             </ul>
         </section>
     </main>
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
-        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
         <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </aside>
     <script src="../../../js/script.js"></script>
 </body>
+
 </html>

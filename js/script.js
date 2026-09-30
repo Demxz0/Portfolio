@@ -274,4 +274,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
         timerId = setTimeout(dismissLaunch, 1600);
     }
+
+    initGamifyCarousel();
+
+    function initGamifyCarousel() {
+        const images = document.querySelectorAll('.carousel-img');
+        const dots = document.querySelectorAll('.carousel-dots .dot');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const fullscreenBtn = document.querySelector('.fullscreen-btn');
+        const modal = document.getElementById('carouselModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.getElementById('closeCarouselModal');
+
+        if (!images.length || !dots.length) return;
+
+        let currentIndex = 0;
+
+        function updateCarousel(index) {
+            images.forEach(img => img.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentIndex = (index + images.length) % images.length;
+            
+            images[currentIndex].classList.add('active');
+            dots[currentIndex].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => {
+            updateCarousel(currentIndex - 1);
+            prevBtn.classList.add('active-glow');
+            setTimeout(() => prevBtn.classList.remove('active-glow'), 300);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            updateCarousel(currentIndex + 1);
+            nextBtn.classList.add('active-glow');
+            setTimeout(() => nextBtn.classList.remove('active-glow'), 300);
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                updateCarousel(index);
+            });
+        });
+
+        if (fullscreenBtn && modal && modalImg && closeBtn) {
+            fullscreenBtn.addEventListener('click', () => {
+                modalImg.src = images[currentIndex].src;
+                modal.classList.add('show');
+                fullscreenBtn.classList.add('active-glow');
+                setTimeout(() => fullscreenBtn.classList.remove('active-glow'), 300);
+            });
+
+            closeBtn.addEventListener('click', () => {
+                modal.classList.remove('show');
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                }
+            });
+        }
+    }
 });

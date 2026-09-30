@@ -23,13 +23,34 @@
             </ul>
         </nav>
     </header>
-    <main class="page-content">
-        <h1>Portfolio</h1>
-        <p>Select a category to view my work.</p>
-        <div class="big-buttons-container">
-            <a href="../portfolio_pages/projects.html" class="big-btn">Projects</a>
-            <a href="../portfolio_pages/games-analysis.html" class="big-btn">Games analysis</a>
-            <a href="../portfolio_pages/mods.html" class="big-btn">Mods</a>
+    <main class="page-content portfolio-content">
+        <h1 class="visually-hidden" style="display: none;">Portfolio</h1>
+        
+        <div class="category-cards-container">
+            <a href="../portfolio_pages/projects.html" class="category-card" style="--card-theme: rgba(226, 180, 189, 0.9); --card-glow: rgba(226, 180, 189, 0.4); --text-color: #18181b;">
+                <img src="https://picsum.photos/400/600?random=30" alt="Projects" class="card-bg">
+                <div class="card-overlay">
+                    <h2>Projects</h2>
+                </div>
+            </a>
+            
+            <a href="../portfolio_pages/games-analysis.html" class="category-card" style="--card-theme: rgba(34, 34, 38, 0.95); --card-glow: rgba(255, 255, 255, 0.1); --text-color: #fff5f5;">
+                <img src="https://picsum.photos/400/600?random=31" alt="Games analysis" class="card-bg">
+                <div class="card-overlay">
+                    <h2>Games analysis</h2>
+                </div>
+            </a>
+            
+            <a href="../portfolio_pages/mods.html" class="category-card" style="--card-theme: rgba(140, 110, 117, 0.95); --card-glow: rgba(140, 110, 117, 0.4); --text-color: #fff5f5;">
+                <img src="https://picsum.photos/400/600?random=32" alt="Mods" class="card-bg">
+                <div class="card-overlay">
+                    <h2>Mods</h2>
+                </div>
+            </a>
+        </div>
+        
+        <div class="category-prompt">
+            SELECT A CATEGORY
         </div>
     </main>
     <aside class="social-links">

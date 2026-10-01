@@ -1,14 +1,11 @@
 Overview
 This was my first solo game jam — Sop Game Jam 2026, theme "the critical point," 5 days, built in Godot 3D. Inspired by Buckshot Roulette, the concept: figure out if the person across from you is human or AI by pushing them to their breaking point.
-[📷 Screenshot: the main room/table setup]
-[🎥 Clip: an interrogation sequence in action]
 
 My Role and Responsibilities
 Solo project — everything: design, systems, dialogue, sound.
 
 Process
 I kept the whole game in a single scene (a room, character, and table) on purpose, so I wouldn't burn time building environments and could focus entirely on the core idea. Started with minimal left/right camera movement, then built interactable item logic and character dialogue, using Buckshot Roulette-style mouse-hover interactions on items.
-[📷 Screenshot: item hover interactions on the table]
 
 Breakdown
 
@@ -18,7 +15,6 @@ Breaking an AI needs the sequence Emotional → Logical → Emotional → Logica
 A monitor shows heartbeat and temperature as a secondary read — though an AI subject can manipulate that too
 Dialogue replies can be intentionally misleading, so you can't rely on them alone
 After the timer: give a flower (human) or shoot (AI) — right call gives a true ending, wrong call gives a bad ending
-[🎥 Clip: the flower-or-gun ending choice]
 
 Challenges and Problems Solved
 
@@ -29,12 +25,7 @@ Scope crept steadily even though the starting idea was simple, which ate into ti
 Decisions
 Deliberately built as one scene to protect time for the core mechanic instead of environment art — a good call given the 5-day limit, even though the mechanic itself still grew bigger than planned.
 
-(I achieved: a fully working interrogation-logic system with two distinct correct sequences, an unreliable-narrator dialogue layer, and a working true/bad ending split, measured by: a complete playable loop from questioning to verdict, by: scoping the environment down to almost nothing so all 5 days went into the actual mechanic.)
-
-Feedback
-(gap — any placement, judge comments, or player reactions from the jam?)
-
-Lessons Learned (temporary)
+Lessons Learned
 
 Recognized if/else sprawl in a game manager as a bad pattern to avoid next time
 Scope creep can happen even after deliberately keeping the concept simple — watch it constantly, not just at the start

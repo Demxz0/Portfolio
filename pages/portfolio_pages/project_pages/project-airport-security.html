@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airport Security - Projects</title>
+    <title>Airport Security - Project</title>
+    <meta name="description"
+        content="Airport Security — a 2D puzzle game built for a Godot game jam that won 1st place.">
     <link rel="icon" type="image/png" href="../../../Images/Main_page_images/Logo.png">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,7 +30,6 @@
 
     <div class="project-video-hero">
         <video class="project-hero-video" autoplay muted loop playsinline>
-            Drop your gameplay video here:
             <source src="../../../Videos/airport_security_hero_video.mp4" type="video/mp4">
         </video>
         <div class="project-hero-gradient"></div>
@@ -39,85 +40,165 @@
                 <span class="tag">Godot</span>
                 <span class="tag">2D</span>
                 <span class="tag">Puzzle</span>
+                <span class="tag">Game Jam</span>
+                <span class="tag">1st Place</span>
             </div>
-        </div>
-        <div class="project-hero-scroll-hint">
-            <span>Scroll</span>
-            <div class="scroll-hint-line"></div>
         </div>
     </div>
 
     <main class="page-content project-details">
 
-        <section class="project-section">
-            <h2>Overview</h2>
-            <p>Airport Security is a 2D puzzle game made for a Godot game jam themed "2D puzzle" — and it won 1st place.
-                Team of 3: me, Leen, and Zaid, built in a day and a half. You play a new intern in airport security, and
-                an officer tests you by finding the smuggler among 3 characters — checking bags, ID, passport, and
-                talking to suspects.</p>
+        <!-- Overview -->
+        <section class="project-overview-section reveal">
+            <div class="project-overview-text">
+                <h2>Overview</h2>
+                <p>Airport Security is a 2D puzzle game made for a Godot game jam themed "2D puzzle" , it WON 1st place.
+                    Team was of 3: Me, Leen, and Zaid, built in a day and a half. You play a new intern in airport
+                    security,
+                    and an officer tests you by finding the smuggler among 3 characters by checking bags, ID, passport,
+                    and talking to suspects.</p>
+            </div>
+            <div class="project-overview-video">
+                <video autoplay muted loop playsinline>
+                    <source src="../../../Videos/airport_security_hero_video.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Concept and Decisions</h2>
-            <p>Leen suggested the concept from National Geographic's "Airport Security" show, I suggested the gameplay
-                style from "That's Not My Neighbor." We only had half a day to plan, so we agreed fast: I'd take full
-                game logic, Leen art and polish, Zaid the main menu. We also agreed to build the whole logic first with
-                placeholder art (skeleton technique), and to reuse a dialogue/settings system I'd already built in an
-                earlier game to save time.</p>
+        <!-- Concept and Decisions -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Concept and Decisions</h2>
+                    <p>Leen suggested the concept from National Geographic's "Airport Security" show, I suggested the
+                        gameplay style from "That's Not My Neighbor." We only had half a day to plan, so we agreed fast:
+                        I'd take full game logic, Leen took art and polish, Zaid the main menu. We also agreed to build
+                        the
+                        whole logic first with placeholder art using (blocking-out technique), and to reuse a
+                        dialogue/settings
+                        system I'd already built in an earlier game to save time.</p>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery single">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/airportsecurity_page/Decisions/inspirations.png"
+                                    alt="Inspirations reference sheet">
+                            </div>
+                            <span class="media-label">Game inspirations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>My Role and Responsibilities</h2>
-            <p>Full game logic: UI interactables, the dialogue system, the smuggler-voting mechanic, and the
-                intro/win/lose scenes — including writing all the dialogue.</p>
+        <!-- My Role and Responsibilities & Process & Breakdown -->
+        <section class="project-section reveal">
+            <div class="project-section-inner split-text">
+                <div class="project-text-col">
+                    <h2>My Role and Responsibilities</h2>
+                    <p>Full game logic: UI interactables, the dialogue system, the smuggler-voting mechanic, and the
+                        intro/win/lose scenes — including writing all the dialogue.</p>
+                </div>
+                <div class="project-text-col">
+                    <h2>Process &amp; Breakdown</h2>
+                    <p>I started with the UI panel and interactable pieces using temp images. I reused my dialogue
+                        system for the "Talk to suspect" option and wrote each character's lines.</p>
+                    <p>Then I built the voting scene using Godot's group system for radio buttons.</p>
+                    <p>I also payed attention for difficulty design. The officer briefs the player on clues to watch
+                        for; distractors like a dog
+                        reacting to food on an innocent character, or a suspiciously talkative character.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Process & Breakdown</h2>
-            <p>
-                I started by building UI interactables with blocking-out technique.
-                I reused dialogue system from previous game.
-                I made the voting mechanic using Godot's group system (radio buttons).
-                Then I added the intro/win/lose dialogue scenes.
-                I also designed the difficulty: officer briefs the player on clues to watch for; distractors like a dog
-                reacting to food on an innocent character, or a suspiciously talkative character.
-            </p>
+        <!-- Challenges and Problems Solved -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Challenges and Problems Solved</h2>
+                    <ul>
+                        <li>Tons of Git merge conflicts on .tscn scene files (I was still learning branches). Some fixes
+                            even corrupted scenes, I fixed them with AI's help.</li>
+                        <li>Bag-search was meant to use dragging to reveal items, but ran out of time so we swapped the
+                            idea to just have a visible zip bag on one character`s bag instead.</li>
+                        <li>Some buttons broke under time pressure, so instead of one shared button script, I ended up
+                            writing a separate script per button just to make it work in time.</li>
+                    </ul>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery single">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/airportsecurity_page/Challenges and Problems Solved/9_buttons_for_same_logic.png"
+                                    alt="9 separate button scripts for same logic">
+                            </div>
+                            <span class="media-label">9 separate button scripts written for the same logic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Challenges and Problems Solved</h2>
-            <ul>
-                <li>Tons of Git merge conflicts on .tscn scene files while still learning branches — some fixes even
-                    corrupted scenes, fixed with AI's help</li>
-                <li>Bag-search was meant to use dragging to reveal items, but ran out of time — swapped to a visible zip
-                    bag on one character instead</li>
-                <li>Some buttons broke under time pressure, so instead of one shared button script, ended up writing a
-                    separate script per button just to make it work in time</li>
-            </ul>
+        <!-- My Impact -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>My Impact</h2>
+                    <p>I didn't like the idea of the game just starting on gameplay and ending on a plain win/lose
+                        screen, so I suggested adding officer dialogue scenes at the start and end. That's actually
+                        where the whole "new intern being tested by the officer" framing came from , it wasn't planned
+                        from the start, it grew out of that decision.</p>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery single">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/airportsecurity_page/My Impact/Screenshot 2026-09-30 235513.png"
+                                    alt="Game result screenshot">
+                            </div>
+                            <span class="media-label">Beginning scene</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>My Impact</h2>
-            <p>Owned the entire game logic and turned a flat win/lose structure into a small narrative with a clear
-                character role (the intern), which shaped how the whole game is framed. I achieved 1st place in the jam
-                by building a full interactive logic layer in 1.5 days using a skeleton-first approach and reusing prior
-                systems.</p>
+        <!-- How I Used AI & Lessons Learned -->
+        <section class="project-section reveal">
+            <div class="project-section-inner split-text">
+                <div class="project-text-col">
+                    <h2>How I Used AI</h2>
+                    <p>Used AI to fix corrupted .tscn files after bad merge resolutions as well as teaching me Godot
+                        editor guide (I was still new to Godot back then).</p>
+                </div>
+                <div class="project-text-col">
+                    <h2>Lessons Learned</h2>
+                    <ul>
+                        <li>Thinking fast under pressure.</li>
+                        <li>Deeper understanding of Git conflicts and reading .tscn files.</li>
+                        <li>Reusing and adapting prior systems instead of rebuilding.</li>
+                        <li>Blocking-out development.</li>
+                        <li>Designing puzzles from the player's perspective.</li>
+                        <li>Building UI interactable components and radio buttons.</li>
+                        <li>Weaving narrative into a puzzle game.</li>
+                        <li>Stronger 2D skills.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Lessons Learned</h2>
-            <ul>
-                <li>Thinking fast under pressure</li>
-                <li>Deeper understanding of Git conflicts and reading .tscn files</li>
-                <li>Reusing and adapting prior systems instead of rebuilding</li>
-                <li>Skeleton-first development</li>
-                <li>Designing puzzles from the player's perspective</li>
-                <li>Building UI components and radio buttons</li>
-                <li>Weaving narrative into a puzzle game</li>
-                <li>Stronger overall 2D skills</li>
-            </ul>
-        </section>
     </main>
+
+    <!-- Media Lightbox Modal -->
+    <div class="media-modal" id="mediaModal" onclick="closeModal()">
+        <div class="media-modal-inner" onclick="event.stopPropagation()">
+            <button class="media-modal-close" onclick="closeModal()">&times;</button>
+            <img id="modalImg" src="" alt="" style="display:none;">
+            <video id="modalVideo" autoplay muted loop playsinline style="display:none;"></video>
+        </div>
+    </div>
+
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
@@ -128,7 +209,88 @@
                 class="fa-brands fa-linkedin-in"></i></a>
         <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </aside>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../../../index.html" class="footer-logo">
+                    <span class="footer-logo-badge">
+                        <img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi"
+                            class="footer-logo-img">
+                    </span>
+                    <span>Dema AL-Jundi</span>
+                </a>
+                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay
+                    systems, and interactive problem solving.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../main_pages/about.html">About me</a></li>
+                    <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../../main_pages/experience.html">Experience</a></li>
+                    <li><a href="../../main_pages/skills.html">Skills</a></li>
+                    <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                    <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">&copy; 2026 Dema AL-Jundi. All rights reserved.</div>
+            <div class="footer-bottom-right">Built by Dema AL-Jundi using Antigravity IDE</div>
+        </div>
+    </footer>
+
     <script src="../../../js/script.js"></script>
+    <script>
+        function openMedia(el) {
+            const frame = el.querySelector('.project-media-frame');
+            const img = frame ? frame.querySelector('img') : null;
+            const vid = frame ? frame.querySelector('video') : null;
+            const modal = document.getElementById('mediaModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalVideo = document.getElementById('modalVideo');
+            if (img) {
+                modalImg.src = img.src;
+                modalImg.style.display = 'block';
+                modalVideo.style.display = 'none';
+                modalVideo.innerHTML = '';
+            } else if (vid) {
+                const source = vid.querySelector('source');
+                const src = source ? source.src : vid.src;
+                modalVideo.innerHTML = `<source src="${src}" type="video/mp4">`;
+                modalVideo.style.display = 'block';
+                modalImg.style.display = 'none';
+                modalImg.src = '';
+                modalVideo.load();
+                modalVideo.play();
+            }
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            const modal = document.getElementById('mediaModal');
+            modal.classList.remove('show');
+            document.getElementById('modalVideo').pause();
+            document.getElementById('modalVideo').innerHTML = '';
+            document.getElementById('modalImg').src = '';
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen Nightmare - Projects</title>
+    <title>Kitchen Nightmare - Project</title>
+    <meta name="description"
+        content="Kitchen Nightmare — a comedic first-person cooking game with sabotaging ingredients, built in Godot with strict architecture principles.">
     <link rel="icon" type="image/png" href="../../../Images/Main_page_images/Logo.png">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,9 +14,8 @@
 
 <body>
     <header class="header">
-        <a href="../../../index.html" class="logo" aria-label="Home">
-            <img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img">
-        </a>
+        <a href="../../../index.html" class="logo" aria-label="Home"><img
+                src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img"></a>
         <nav class="nav-bar">
             <ul>
                 <li><a href="../../main_pages/about.html">About me</a></li>
@@ -35,71 +36,245 @@
             <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
             <h1>Kitchen Nightmare</h1>
             <div class="project-tags">
-                <span class="tag">Godot</span>
-                <span class="tag">3D</span>
-                <span class="tag">FSM</span>
+                <span class="tag">Godot</span><span class="tag">3D</span><span class="tag">First-Person</span><span
+                    class="tag">Design Patterns</span>
             </div>
-        </div>
-        <div class="project-hero-scroll-hint">
-            <span>Scroll</span>
-            <div class="scroll-hint-line"></div>
         </div>
     </div>
 
     <main class="page-content project-details">
-        <section class="project-section">
-            <h2>Overview</h2>
-            <p>Kitchen Nightmare (also called Recipe for Betrayal) is a comedic first-person cooking game made for a
-                1-month summer program at AUB's gaming academy, built in Godot with Leen. The twist: ingredients
-                actively sabotage, gaslight, and ragebait you while you cook.</p>
+
+        <section class="project-overview-section reveal">
+            <div class="project-overview-text">
+                <h2>Overview</h2>
+                <p>Kitchen Nightmare is a comedic first-person cooking game made initially for a
+                    1-month summer program at AUB's gaming academy, built in Godot 4.7 with Leen. Its plot twist
+                    is that all ingredients actively sabotage, gaslight, and ragebait you while you cook. It's still
+                    ongoing past the program
+                    month.</p>
+            </div>
+            <div class="project-overview-video">
+                <video autoplay muted loop playsinline>
+                    <source src="../../../Videos/kitchennightmare_hero_video.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>My Role and Responsibilities</h2>
-            <p>All game logic and architecture. Leen handled assets, kitchen scene building, and later
-                sound/UI/transition polish. I enforced strict architecture rules from day one.</p>
+        <section class="project-section reveal">
+            <div class="project-section-inner split-text">
+                <div class="project-text-col">
+                    <h2>Origin</h2>
+                    <p>The idea at first was making a game that has a character with AI behavior tied to an SLM but we
+                        didn't find a suitable 2D concept.
+                        Then, we went for a low-poly 3D cooking game instead. Leen suggested the cooking
+                        gameplay; I suggested the sabotage/gaslight concept.</p>
+                </div>
+                <div class="project-text-col">
+                    <h2>My Role and Responsibilities</h2>
+                    <p>All game logic and architecture. Leen handled assets, kitchen scene building, and later
+                        sound/UI/transition polish , I helped her through 3D issues since it was her first time
+                        (lighting, prefabs, walls, floor).</p>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Process & Breakdown</h2>
-            <p>I set 4 architecture rules: composition over inheritance, data-driven logic, signal/event bus decoupling,
-                and one reusable state machine. This formed an informal TDD (technical design document).</p>
-            <ul>
-                <li>Data-driven scripts first: levels, ingredients, recipes, player skills</li>
-                <li>Core systems: state machine, event bus, level/game managers</li>
-                <li>Generalized interactable script for cabinets/fridges</li>
-                <li>First-person pickup/release logic</li>
-                <li>Prototype scope: 3 levels, level 0 as tutorial</li>
-            </ul>
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Process &amp; Breakdown</h2>
+                    <p>I set up the repo and base code while Leen wrote the GDD.
+                        Before writing any gameplay code, I set 4 architecture rules: composition over
+                        inheritance, data-driven logic, signal/event bus decoupling, and one reusable state machine. I
+                        wrote these into a rules file inside the project for Antigravity IDE to follow.</p>
+                    <p>The base code was the data-driven and autoload scripts: levels, ingredients, recipes, state
+                        machine, event bus, level/game/phase managers.
+                        Then i made interaction logic and worked on first-person pickup/release logic.
+                        I generalized some scripts the AI was trying to make a script for each thing with same logic
+                        like cabinets and fridges (one script for open behavior, not one per object).
+                        After that i made station scripts: gathering, cutting board, stove, assembling (refactor it so
+                        all station take from one station class).
+                        Made only 3 levels as a prototype only, level 0 as a tutorial introducing the "sneaky egg and
+                        bread" ragebait letting the player know what kind of game this is.
+                    </p>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Process & Breakdown/schdule.png"
+                                    alt="Development schedule"></div>
+                            <span class="media-label">Weekly development schedule</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Process & Breakdown/lighting_suggestions.png"
+                                    alt="Lighting suggestions"></div>
+                            <span class="media-label">Lighting suggestions for Leen's scene</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Process & Breakdown/kitchen_prefab_making.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Kitchen prefab being assembled</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Process & Breakdown/pickup_&_release_making.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">First-person pickup and release logic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Challenges and Problems Solved</h2>
-            <ul>
-                <li>Held items clipped through objects — solved with a second camera rendering only the held item.</li>
-                <li>Assembling ingredients needed unique placement — worked out that coordinates belonged on the recipe
-                    data, not the ingredient data.</li>
-                <li>Converting every prefab to a rigid body with correct collisions per state took a lot of time.</li>
-            </ul>
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Challenges and Problems Solved</h2>
+                    <ul>
+                        <li>Held items clipped through anything in front of the player, so I researched the problem
+                            and found a known solution for every first person game. A second camera rendering only the
+                            held item.</li>
+                        <li>Assembling ingredients into a pot/plate needed unique placement per ingredient per recipe —
+                            AI suggested storing coordinates on the ingredient data, which didn't work; i solved the
+                            problem on my own
+                            by realizing that coordinates belong on the recipe data instead.</li>
+                        <li>Delayed the sabotage/ragebait system until near the end, which left too little time and I
+                            had to
+                            shift the final push to audio polish instead.</li>
+                    </ul>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/clipping_problem.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Item clipping through walls (before fix)</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/curtains_problem.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Curtain rendering glitch</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/audio_system_refactoring.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Audio system refactoring session</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems1.png"
+                                    alt="Problem 1"></div>
+                            <span class="media-label">Bug encountered during development</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems5.png"
+                                    alt="Problem 2"></div>
+                            <span class="media-label">Bug encountered during development</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems3.png"
+                                    alt="Problem 3"></div>
+                            <span class="media-label">Bug encountered during development</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems4.png"
+                                    alt="Problem 4"></div>
+                            <span class="media-label">Bug encountered during development</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems2.png"
+                                    alt="Problem 5"></div>
+                            <span class="media-label">Bug encountered during development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>My Impact & Decisions</h2>
-            <p>I achieved a fully data-driven cooking system with a working sabotage-ready architecture, delivered as a
-                playable prototype in one month. Enforcing strict architecture rules from day one kept the codebase
-                maintainable as scope grew.</p>
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>My Impact &amp; Decisions</h2>
+                    <p>Set Architecture rules before writing any code, which is essentially an informal TDD
+                        (technical design document). I didn't know the term until a week after already doing it.
+                        I also added level-design section in the GDD.</p>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/My Impact & Decisions/my_addtion_on_GDD.png"
+                                    alt="My GDD addition"></div>
+                            <span class="media-label">Level-design section I added to the GDD</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/My Impact & Decisions/checklist_inspire.png"
+                                    alt="Checklist inspiration"></div>
+                            <span class="media-label">Checklist UI inspiration reference</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Lessons Learned</h2>
-            <ul>
-                <li>Learned to design architecture before writing gameplay code</li>
-                <li>Core mechanics should be built early, not delayed (sabotage was added late)</li>
-                <li>AI-generated code needs active correction toward reusable patterns</li>
-                <li>Some problems need your own reasoning, not just AI suggestions</li>
-            </ul>
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Lessons Learned</h2>
+                    <ul>
+                        <li>Learned to design architecture before writing gameplay code by using the approprint design
+                            patterns.</li>
+                        <li>Core mechanics should be built early, not delayed.</li>
+                        <li>Project deliverables and timelines should be realistic.</li>
+                        <li>First-Person clipping solution.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
     </main>
+
+    <div class="media-modal" id="mediaModal" onclick="closeModal()">
+        <div class="media-modal-inner" onclick="event.stopPropagation()">
+            <button class="media-modal-close" onclick="closeModal()">&times;</button>
+            <img id="modalImg" src="" alt="" style="display:none;">
+            <video id="modalVideo" autoplay muted loop playsinline style="display:none;"></video>
+        </div>
+    </div>
+
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
@@ -110,7 +285,63 @@
                 class="fa-brands fa-linkedin-in"></i></a>
         <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </aside>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../../../index.html" class="footer-logo"><span class="footer-logo-badge"><img
+                            src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi"
+                            class="footer-logo-img"></span><span>Dema AL-Jundi</span></a>
+                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay
+                    systems, and interactive problem solving.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../main_pages/about.html">About me</a></li>
+                    <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../../main_pages/experience.html">Experience</a></li>
+                    <li><a href="../../main_pages/skills.html">Skills</a></li>
+                    <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                    <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">&copy; 2026 Dema AL-Jundi. All rights reserved.</div>
+            <div class="footer-bottom-right">Built by Dema AL-Jundi using Antigravity IDE</div>
+        </div>
+    </footer>
+
     <script src="../../../js/script.js"></script>
+    <script>
+        function openMedia(el) {
+            const frame = el.querySelector('.project-media-frame');
+            const img = frame ? frame.querySelector('img') : null;
+            const vid = frame ? frame.querySelector('video') : null;
+            const modal = document.getElementById('mediaModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalVideo = document.getElementById('modalVideo');
+            if (img) { modalImg.src = img.src; modalImg.style.display = 'block'; modalVideo.style.display = 'none'; modalVideo.innerHTML = ''; }
+            else if (vid) { const s = vid.querySelector('source'); modalVideo.innerHTML = `<source src="${s ? s.src : vid.src}" type="video/mp4">`; modalVideo.style.display = 'block'; modalImg.style.display = 'none'; modalImg.src = ''; modalVideo.load(); modalVideo.play(); }
+            modal.classList.add('show'); document.body.style.overflow = 'hidden';
+        }
+        function closeModal() { const m = document.getElementById('mediaModal'); m.classList.remove('show'); document.getElementById('modalVideo').pause(); document.getElementById('modalVideo').innerHTML = ''; document.getElementById('modalImg').src = ''; document.body.style.overflow = ''; }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    </script>
 </body>
 
 </html>

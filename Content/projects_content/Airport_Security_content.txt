@@ -1,24 +1,18 @@
 Overview
 Airport Security is a 2D puzzle game made for a Godot game jam themed "2D puzzle" — and it won 1st place. Team of 3: me, Leen, and Zaid, built in a day and a half. You play a new intern in airport security, and an officer tests you by finding the smuggler among 3 characters — checking bags, ID, passport, and talking to suspects.
-[📷 Screenshot: main gameplay screen with a character being searched]
-[🎥 Clip: full playthrough, ~30–60 sec, showing the search + accusation flow]
 
 Concept and Decisions
 Leen suggested the concept from National Geographic's "Airport Security" show, I suggested the gameplay style from "That's Not My Neighbor." We only had half a day to plan, so we agreed fast: I'd take full game logic, Leen art and polish, Zaid the main menu. We also agreed to build the whole logic first with placeholder art (skeleton technique), and to reuse a dialogue/settings system I'd already built in an earlier game to save time.
-[📷 Screenshot: placeholder/temp-art version next to final art, side by side]
 
 My Role and Responsibilities
 Full game logic: UI interactables, the dialogue system, the smuggler-voting mechanic, and the intro/win/lose scenes — including writing all the dialogue.
 
 Process
 I started with the UI panel and interactable pieces using temp images. I reused my dialogue system for the "Talk to suspect" option and wrote each character's lines.
-[🎥 Clip: "Talk to suspect" interaction]
 
 Then I built the voting scene using Godot's group system for radio buttons — first time using groups.
-[📷 Screenshot: voting/accusation screen]
 
 I didn't like the idea of the game just starting on gameplay and ending on a plain win/lose screen, so I suggested adding officer dialogue scenes at the start and end. That's actually where the whole "new intern being tested by the officer" framing came from — it wasn't planned from the start, it grew out of that decision.
-[🎥 Clip: officer intro dialogue → win/lose ending]
 
 Breakdown
 
@@ -37,16 +31,10 @@ Some buttons broke under time pressure, so instead of one shared button script, 
 My Impact
 Owned the entire game logic and turned a flat win/lose structure into a small narrative with a clear character role (the intern), which shaped how the whole game is framed.
 
-(I achieved: 1st place in the jam, measured by: winning the competition among all entries, by: building a full interactive logic layer in 1.5 days using a skeleton-first approach and reusing prior systems instead of building from scratch.)
-
-Feedback
-(gap — any comments from judges or players on why it won 1st? Even a short line would help here.)
-
 How I Used AI
 Used AI to fix corrupted .tscn files after bad merge resolutions.
-[📷 Optional: before/after of a fixed scene file, if you want to show it]
 
-Lessons Learned (temporary)
+Lessons Learned
 
 Thinking fast under pressure
 Deeper understanding of Git conflicts and reading .tscn files

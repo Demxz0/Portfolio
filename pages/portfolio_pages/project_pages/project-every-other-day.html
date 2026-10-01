@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Every Other Day - Projects</title>
+    <title>Every Other Day - Project</title>
+    <meta name="description" content="Every Other Day — a 2D Arabic life-balance sim made for the Nesto game jam in 7 days.">
     <link rel="icon" type="image/png" href="../../../Images/Main_page_images/Logo.png">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <header class="header">
-        <a href="../../../index.html" class="logo" aria-label="Home">
-            <img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img">
-        </a>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="../../main_pages/about.html">About me</a></li>
-                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
-                <li><a href="../../main_pages/experience.html">Experience</a></li>
-                <li><a href="../../main_pages/skills.html">Skills</a></li>
-                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
+        <a href="../../../index.html" class="logo" aria-label="Home"><img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img"></a>
+        <nav class="nav-bar"><ul>
+            <li><a href="../../main_pages/about.html">About me</a></li>
+            <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../../main_pages/experience.html">Experience</a></li>
+            <li><a href="../../main_pages/skills.html">Skills</a></li>
+            <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+        </ul></nav>
     </header>
 
     <div class="project-video-hero">
@@ -35,87 +30,169 @@
             <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
             <h1>Every Other Day</h1>
             <div class="project-tags">
-                <span class="tag">Godot</span>
-                <span class="tag">Simulation</span>
-                <span class="tag">Game Jam</span>
+                <span class="tag">Godot</span><span class="tag">2D</span><span class="tag">Simulation</span><span class="tag">Game Jam</span>
             </div>
-        </div>
-        <div class="project-hero-scroll-hint">
-            <span>Scroll</span>
-            <div class="scroll-hint-line"></div>
         </div>
     </div>
 
     <main class="page-content project-details">
 
-        <section class="project-section">
-            <h2>Overview</h2>
-            <p>Every Other Day is a 2D Arabic life-balance sim made in Godot for the Nesto game jam (theme: "The world
-                changes slowly"), in 7 days with a team of 2 — me and Leen. You play someone balancing life tasks like
-                work, study, and hobbies; ignore one area too long and it drags you down. The idea came from watching my
-                own and other people's lives constantly trying to balance everything.</p>
+        <section class="project-overview-section reveal">
+            <div class="project-overview-text">
+                <h2>Overview</h2>
+                <p>Every Other Day is a 2D Arabic life-balance sim made in Godot for the Nesto game jam (theme: "The world changes slowly"), in 7 days with a team of 2 — me and Leen. You play someone balancing life tasks like work, study, and hobbies; ignore one area too long and it drags you down. The idea came from watching my own and other people's lives constantly trying to balance everything.</p>
+            </div>
+            <div class="project-overview-video">
+                <video autoplay muted loop playsinline>
+                    <source src="../../../Videos/every_other_day_hero_video.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>My Role and Responsibilities</h2>
-            <p>All game logic was mine — stats, tasks, events, and the data-driven notebook system. Leen handled art and
-                polish.</p>
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>My Role and Responsibilities</h2>
+                    <p>All game logic was mine — stats, tasks, events, and the data-driven notebook system. Leen handled art and polish.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Process & Breakdown</h2>
-            <p>I wanted the notebook feedback to feel like it had endless outcomes, so I designed a notebook broken into
-                sections, each pulling a line from a data table based on the player's state. I built three data tables
-                (CSV-based) and structured Tasks/Events as script classes.</p>
-            <ul>
-                <li>Data tables: stats, life aspects, events (CSV-based)</li>
-                <li>DataLoader script to import the CSVs</li>
-                <li>Tasks/Events classes as structured arrays</li>
-                <li>Notebook UI pulling feedback per day</li>
-            </ul>
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Process &amp; Breakdown</h2>
+                    <p>The idea was inspired by 60 Seconds, though Leen hadn't played it. I wanted the notebook feedback to feel like it had endless outcomes, so I asked AI how these systems actually work. The answer: it's not endless code paths, it's a notebook broken into sections, each pulling a line from a data table based on the player's state.</p>
+                    <p>I built three data tables:</p>
+                    <ul>
+                        <li>Stats (Energy, Mood, Time) — 5 condition levels each, one sentence per level</li>
+                        <li>Life aspects (Study, Worship, Sports, Programming, Cleaning, Learning language) — good/bad sentence each</li>
+                        <li>Events — random yes/no events that affect one or more aspects</li>
+                    </ul>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/everyotherday_page/Process & Breakdown/table1.png" alt="Data table 1"></div>
+                            <span class="media-label">Stats data table (Energy, Mood, Time)</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/everyotherday_page/Process & Breakdown/table2.png" alt="Data table 2"></div>
+                            <span class="media-label">Life aspects data table</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/everyotherday_page/Process & Breakdown/table3.png" alt="Data table 3"></div>
+                            <span class="media-label">Random events data table</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Challenges and Problems Solved</h2>
-            <ul>
-                <li>Picked 6 life aspects based on my own routine, making them too specific and less relatable</li>
-                <li>Had trouble sizing a Scroll node so notebook text fit horizontally</li>
-                <li>The scope was too big for a 7-day jam given the systems involved</li>
-            </ul>
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Challenges and Problems Solved</h2>
+                    <ul>
+                        <li>Picked the 6 life aspects based on my own routine, which made them too specific and less relatable for most players</li>
+                        <li>Had trouble sizing a Scroll node so notebook text fit horizontally</li>
+                        <li>The scope was too big for a 7-day jam given the systems involved</li>
+                    </ul>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery single">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/everyotherday_page/Challenges and Problems Solved/scrolling_problem.png" alt="Scroll node sizing problem"></div>
+                            <span class="media-label">Scroll node sizing issue with the notebook UI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>My Impact & Decisions</h2>
-            <p>I chose not to add visual stat bars on purpose, wanting the player to infer their state from the writing
-                instead of a clear bar, to keep the challenge in place. I achieved a fully data-driven feedback system
-                that could theoretically produce hundreds of narrative outcomes by designing a condition-based
-                sentence-table architecture.</p>
+        <section class="project-section reveal">
+            <div class="project-section-inner split-text">
+                <div class="project-text-col">
+                    <h2>Decisions</h2>
+                    <p>Leen suggested adding visible stat bars; I decided against it on purpose, wanting the player to infer their state from the writing instead of a clear bar, to keep the challenge in place.</p>
+                </div>
+                <div class="project-text-col">
+                    <h2>Feedback</h2>
+                    <p>After submission, the judges said the concept and gameplay actually suit mobile better than PC — I agreed, and think it could work for web too.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="project-section">
-            <h2>Lessons Learned</h2>
-            <ul>
-                <li>Scope the idea to fit the timeline</li>
-                <li>Don't build around a reference only one teammate knows</li>
-                <li>Learned how "infinite outcome" games are really built</li>
-                <li>Design for the player/audience, not just personal experience</li>
-                <li>Manage time even when life gets busy</li>
-                <li>Never let AI drive the code unreviewed — know your own architecture</li>
-                <li>Pick the platform that fits the gameplay</li>
-            </ul>
+        <section class="project-section reveal">
+            <div class="project-section-inner split-text">
+                <div class="project-text-col">
+                    <h2>How I Used AI</h2>
+                    <p>Used AI to understand how "many-outcome" narrative games are structured, which led directly to the data-table design. Also let AI write code without reviewing it closely while busy elsewhere — while writing this portfolio, I found the DataLoader and CSVs I built were never actually connected; the game was quietly running on hardcoded sentences the whole time.</p>
+                </div>
+                <div class="project-text-col">
+                    <h2>Lessons Learned</h2>
+                    <ul>
+                        <li>Scope the idea to fit the timeline</li>
+                        <li>Don't build around a reference only one teammate knows</li>
+                        <li>Learned how "infinite outcome" games are really built</li>
+                        <li>Design for the player/audience, not just personal experience</li>
+                        <li>Never let AI drive the code unreviewed — know your own architecture</li>
+                        <li>Pick the platform that fits the gameplay</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
     </main>
+
+    <div class="media-modal" id="mediaModal" onclick="closeModal()">
+        <div class="media-modal-inner" onclick="event.stopPropagation()">
+            <button class="media-modal-close" onclick="closeModal()">&times;</button>
+            <img id="modalImg" src="" alt="" style="display:none;">
+            <video id="modalVideo" autoplay muted loop playsinline style="display:none;"></video>
+        </div>
+    </div>
+
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
-                class="fa-brands fa-itch-io"></i></a>
-        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
-                class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
-                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </aside>
-    <script src="../../../js/script.js"></script>
-</body>
 
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../../../index.html" class="footer-logo"><span class="footer-logo-badge"><img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi" class="footer-logo-img"></span><span>Dema AL-Jundi</span></a>
+                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay systems, and interactive problem solving.</p>
+            </div>
+            <div class="footer-col"><h3>Quick Links</h3><ul class="footer-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../main_pages/about.html">About me</a></li>
+                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../../main_pages/experience.html">Experience</a></li>
+                <li><a href="../../main_pages/skills.html">Skills</a></li>
+                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+            </ul></div>
+            <div class="footer-col"><h3>Connect</h3><ul class="footer-links">
+                <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">&copy; 2026 Dema AL-Jundi. All rights reserved.</div>
+            <div class="footer-bottom-right">Built by Dema AL-Jundi using Antigravity IDE</div>
+        </div>
+    </footer>
+
+    <script src="../../../js/script.js"></script>
+    <script>
+        function openMedia(el) { const frame=el.querySelector('.project-media-frame'); const img=frame?frame.querySelector('img'):null; const vid=frame?frame.querySelector('video'):null; const modal=document.getElementById('mediaModal'); const modalImg=document.getElementById('modalImg'); const modalVideo=document.getElementById('modalVideo'); if(img){modalImg.src=img.src;modalImg.style.display='block';modalVideo.style.display='none';modalVideo.innerHTML='';}else if(vid){const s=vid.querySelector('source');modalVideo.innerHTML=`<source src="${s?s.src:vid.src}" type="video/mp4">`;modalVideo.style.display='block';modalImg.style.display='none';modalImg.src='';modalVideo.load();modalVideo.play();}modal.classList.add('show');document.body.style.overflow='hidden';}
+        function closeModal(){const m=document.getElementById('mediaModal');m.classList.remove('show');document.getElementById('modalVideo').pause();document.getElementById('modalVideo').innerHTML='';document.getElementById('modalImg').src='';document.body.style.overflow='';}
+        document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+    </script>
+</body>
 </html>

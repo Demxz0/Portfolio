@@ -1,7 +1,5 @@
 Overview
 Every Other Day is a 2D Arabic life-balance sim made in Godot for the Nesto game jam (theme: "The world changes slowly"), in 7 days with a team of 2 — me and Leen. You play someone balancing life tasks like work, study, and hobbies; ignore one area too long and it drags you down. The idea came from watching my own and other people's lives constantly trying to balance everything.
-[📷 Screenshot: main gameplay/notebook screen]
-[🎥 Clip: a day passing and the notebook giving feedback]
 
 My Role and Responsibilities
 All game logic was mine — stats, tasks, events, and the data-driven notebook system. Leen handled art and polish.
@@ -10,7 +8,6 @@ Process
 The idea was inspired by 60 Seconds, though Leen hadn't played it — looking back, building a whole game around a reference only one of us knew was a mistake.
 
 I wanted the notebook feedback (like in 60 Seconds) to feel like it had endless outcomes, so I asked AI how these systems actually work under the hood. The answer: it's not endless code paths, it's a notebook broken into sections, each pulling a line from a data table based on the player's state.
-[📷 Screenshot: one of the data tables/spreadsheets]
 
 I built three data tables:
 
@@ -19,7 +16,6 @@ Life aspects (Study, Worship, Sports, Programming, Cleaning, Learning language) 
 Events — random yes/no events that affect one or more aspects
 
 I also built Tasks and Events as script classes, each holding an array of entries with their own ID and variables.
-[📷 Screenshot or snippet: the Tasks/Events class structure]
 
 Breakdown
 
@@ -36,9 +32,6 @@ The scope was too big for a 7-day jam given the systems involved
 
 Decisions
 Leen suggested adding visual stat bars; I decided against it on purpose, wanting the player to infer their state from the writing instead of a clear bar, to keep the challenge in place. Wanted drawn visual feedback like 60 Seconds too, but ran out of time.
-[📷 Screenshot: notebook text without stat bars, showing the intended "figure it out" feel]
-
-(I achieved: a fully data-driven feedback system that could theoretically produce hundreds of narrative outcomes, measured by: 3 stats × 5 levels, 6 aspects, and a random events table all feeding one notebook, by: designing a condition-based sentence-table architecture instead of hardcoding branches.)
 
 Feedback
 Leen wanted visible stat bars — I chose not to add them for gameplay reasons (see Decisions). After submission, the judges said the concept and gameplay actually suit mobile better than PC — I agreed, and think it could work for web too.
@@ -46,7 +39,7 @@ Leen wanted visible stat bars — I chose not to add them for gameplay reasons (
 How I Used AI
 Used AI to understand how "many-outcome" narrative games are structured, which led directly to the data-table design. Also let AI write code without reviewing it closely while busy elsewhere — while writing this portfolio, I found the DataLoader and CSVs I built were never actually connected; the game was quietly running on hardcoded sentences in the main script the whole time.
 
-Lessons Learned (temporary)
+Lessons Learned
 
 Scope the idea to fit the timeline
 Don't build around a reference only one teammate knows

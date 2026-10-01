@@ -1,0 +1,44 @@
+What is all about me?
+
+I close my eyes , picture , wire , solve.
+
+My name is Dima Al-Jundi
+
+I'm a software engineer with a deep love for games. I don't just play them, I obsess over how they're built. My background in software engineering gives me a strong foundation in code quality: I think in terms of code smells, test cases, refactoring, design patterns, and maintainable systems, and I bring that same rigor into game development.
+
+What I Do
+
+Work across both Godot (GDScript) and Unity (C#) , with Godot as my engine of choice.
+Have touched nearly every discipline in indie game development, but I'm strongest and most passionate about gameplay programming and SFX design/manipulation.
+Participated in 4 game jams — won 1st place in one, and an award in another.
+
+How I Work
+
+Analytical by nature; i enjoy breaking down problems, structuring systems, and organizing complexity into something manageable.
+Natural leader; comfortable dividing tasks, reading people, managing time, and taking responsibility for outcomes.
+Stay calm under pressure; when something breaks unexpectedly, I focus on fixing it rather than panicking.
+Quiet, but talk non-stop once I'm on a topic I know well.
+I gamify almost everything, i've even turned my own life into a gamified system in Notion to manage habits and goals.
+[Screenshots from Notion page]
+
+My Process
+
+I write quick thoughts into Notepad first so nothing gets lost, then get refined into Google Docs when they need real structure (sometimes with AI help to polish the writing).
+I trust my own imagination and game design knowladge over AI for ideation and GDD writing.
+I write and architect my own code so I stay in control of the engineering decisions, but I'll use AI to speed up repetitive or well-understood implementation work.
+In Problem-solving & Debugging i let AI take a first pass on common problems, but if it's struggling, I step in and solve it myself.
+
+What am i currently doing?
+
+Deepening my knowledge of performance optimization and engine profiling.
+Learning to build mods, and picking up Roblox Studio and Unreal Editor for Fortnite.
+Open to full-time roles, contract work, and indie collaborations.
+
+Outside of Dev
+
+My hobbies are: Calisthenics, drawing, and cooking.
+I've got a strong imagination , always generating ideas and stories which what makes me always leave Impact.
+I'm also into anime, english-series lover , memes.
+
+[Vibe image slider here] — My Vibe
+[Autoplay video] Characters/personalities I relate to

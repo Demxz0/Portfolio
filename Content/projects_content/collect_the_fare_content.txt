@@ -1,0 +1,47 @@
+Overview
+Collect the Fare is a 3D mobile game I worked on for 3 months during my internship at Dimensions game studio. It started as a 2-week intern game jam (paired one employee with one intern — I worked with Taif) and evolved through two full concept pivots into an Egyptian microbus dodging traffic illegally, Subway Surfers-style. First time using Unity, first time working in 3D.
+
+Phase 1 — The Jam
+Taif suggested an isometric runner, I suggested a panda/bamboo theme: a panda switching between two roads, collecting bamboo, with some levels using a memory pattern puzzle. I learned Unity basics on YouTube beforehand, then split roles with Taif — she did art, roads, and bamboo spawning, I did player movement, camera, and the puzzle system.
+
+I wrote the first all-in-one player controller script. Taif, acting more as a supervisor than a teammate, refactored it into four separate scripts (Player, PlayerMovement, PlayerHealth, PlayerInput) and fixed camera/logic issues — I learned a lot just watching how she restructured it.
+
+Phase 2 — Pivot and Full Development
+Our game was chosen to keep developing, but got reworked into a Subway Surfers-style runner. Taif then left the studio; Samer took over as supervisor, with Talal (art) and Qasim (design direction). The concept shifted again to an Egyptian microbus illegally dodging obstacles.
+
+I was treated like a full employee — added to the studio's GitHub org (pushing to the real repo) and to Jira, where I ran my own scrum/kanban tasks for the first time.
+
+My Responsibilities
+Main screen UI, camera balance, obstacle logic, sidewalk prop spawning, the after-continue effect, and the passenger pickup/drop-off system.
+
+Breakdown
+
+Main UI and camera balance
+Obstacle and sidewalk prop spawning
+Passenger pickup/drop-off system
+After-continue effect (see Impact below)
+
+Challenges and Problems Solved
+
+Getting a pigeon fly-away animation in the prop system to trigger at the right moment — first real 3D animation work, and noticeably different from how Godot handles it
+Passenger jump animations clipped through the bus model — fixed by shrinking passengers as they pass through
+Much of my first month's work got rewritten by Samer and Qasim, partly from fast-changing direction, partly because my code needed better architecture — pushed me to actually learn refactoring
+
+My Impact
+In the last week, Samer asked me to add a creative "after continue" effect — smoke on the van when the player resumes after a crash. Instead of copying Subway Surfers' generic poof-and-go, I tied it to the game's own fiction: the van stalls briefly after the crash, then suddenly speeds off. I built it with tweens and added matching vroom/drift SFX into a teammate's existing scriptable-object audio system — without disrupting how it was structured.
+
+Decisions
+Chose to reinterpret the "after continue" effect around the crash context instead of mimicking the reference game, and integrated new audio into an existing system exactly as designed rather than restructuring it.
+
+Feedback
+I got lots of feedbacks thought the internship on my work like the pigeon size and the after-continue effect, some was negative so i had to adjust it and some was positive like the after-continue effect which was liked by almost everyone.
+
+How I Used AI
+Used Claude throughout to learn C#, since this was a new language alongside a new engine.
+
+Lessons Learned
+Learned Unity and 3D concepts from the ground up
+Learned proper Git branching (never touch main directly, branch per task, merge full patches, split responsibilities to avoid conflicts, use .gitignore for machine-specific files)
+Learned to test in isolation using temporary scenes/scripts instead of playing the whole game
+Learned spawning/pooling systems and to rely on official docs
+Learned real software architecture: design patterns (singleton, scriptable objects, event bus/observer, state machine, pooling, interfaces) and why refactoring for maintainability matters

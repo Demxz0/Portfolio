@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Skeleton</title>
+    <link rel="icon" type="image/png" href="Images/Main_page_images/Logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="launch-active">
+    <div id="launch-screen" class="launch-screen" aria-label="Loading portfolio">
+        <div class="launch-logo-container">
+            <div class="launch-pulse-ring launch-pulse-ring-outer"></div>
+            <div class="launch-pulse-ring launch-pulse-ring-inner"></div>
+            <div class="launch-logo-frame">
+                <img src="Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="launch-logo-img">
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <a href="index.html" class="logo" aria-label="Home">
+            <img src="Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img">
+        </a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="pages/main_pages/about.html">About me</a></li>
+                <li><a href="pages/main_pages/portfolio.html">Portfolio</a></li>
+                <li><a href="pages/main_pages/experience.html">Experience</a></li>
+                <li><a href="pages/main_pages/skills.html">Skills</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <canvas id="hero-particles" class="hero-particles-canvas"></canvas>
+            <div class="hero-content">
+                <span class="intro-text">Konnichiwa , I'm</span>
+                <h1>Dema AL-Jundi</h1>
+                <h2>I transform ideas into games</h2>
+                <p>
+                    I'm a software engineer specializing in game development and design. Passionate about transforming
+                    ideas into structured gameplay systems.
+                    I combine technical development with creative design to build games that are both engaging and
+                    purposeful.
+                    I have a strong interest in problem solving, gameplay mechanics, and concept-driven design.
+                </p>
+                <div class="hero-buttons">
+                    <a href="pages/main_pages/portfolio.html" class="btn btn-primary">
+                        <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m16 18 6-6-6-6"></path>
+                            <path d="m8 6-6 6 6 6"></path>
+                            <path d="m14.5 4-5 16"></path>
+                        </svg>
+                        <span>My work</span>
+                    </a>
+                    <a href="pages/main_pages/about.html" class="btn btn-secondary">
+                        <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9.5"></circle>
+                            <circle cx="12" cy="9.5" r="3.2"></circle>
+                            <path d="M6.5 18.2c1.3-2.6 3.2-3.7 5.5-3.7s4.2 1.1 5.5 3.7"></path>
+                        </svg>
+                        <span>About me</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="awards-section" id="awards">
+            <div class="awards-header reveal">
+                <h2>Awards</h2>
+            </div>
+            <div class="awards-list">
+                <div class="award-row reveal">
+                    <div class="award-card award-text-card">
+                        <span class="award-badge"><i class="fa-solid fa-trophy"></i> 1st Place Winner</span>
+                        <h3>Godot Game Jam — 2D Puzzle</h3>
+                        <div class="award-project-name">Project: Airport Security</div>
+                        <p>
+                            Won 1st place among all entries in a competitive 36-hour Godot game jam. Built complete
+                            interactive logic, dialogue interrogation systems, and suspect deduction mechanics in a
+                            high-intensity collaborative sprint.
+                        </p>
+                        <a href="pages/portfolio_pages/project_pages/project-airport-security.html"
+                            class="award-link">View Project Details &rarr;</a>
+                    </div>
+                    <div class="award-card award-image-card">
+                        <img src="Images/Main_page_images/godotjam_award.jpg"
+                            alt="Godot Game Jam Award - Airport Security">
+                    </div>
+                </div>
+
+                <div class="award-row reverse reveal">
+                    <div class="award-card award-text-card">
+                        <span class="award-badge"><i class="fa-solid fa-award"></i> Cultural Impact Award</span>
+                        <h3>SheJam Game Jam</h3>
+                        <div class="award-project-name">Project: Ashes of Hope</div>
+                        <p>
+                            Honored with the Cultural Impact Award for an emotional, narrative-rich visual novel
+                            developed in 10 days, exploring post-war rebuilding, family bonds, and resilience through
+                            interactive storytelling.
+                        </p>
+                        <a href="pages/portfolio_pages/project_pages/project-ashes-of-hope.html" class="award-link">View
+                            Project Details &rarr;</a>
+                    </div>
+                    <div class="award-card award-image-card">
+                        <img src="Images/Main_page_images/shejam_award.jpg" alt="SheJam Game Jam Award - Ashes of Hope">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mentorship-section" id="leadership">
+            <div class="mentorship-header reveal">
+                <h2>Leadership & Mentorship</h2>
+            </div>
+            <div class="mentorship-container reveal">
+                <div class="mentorship-content">
+                    <h3>Victoris 5 Game Jam — Student Mentor</h3>
+                    <div class="mentorship-org">
+                        <i class="fa-solid fa-building-columns"></i> IEEE Mansoura Student Branch
+                    </div>
+                    <p>
+                        Selected as an official mentor for the Victoris 5 Game Jam for university students.
+                        Guided student teams through gameplay architecture, mechanics design, rapid problem-solving,
+                        and project scope management under competition time constraints to help them build engaging,
+                        playable game prototypes.
+                    </p>
+                </div>
+                <div class="mentorship-image-card">
+                    <img src="Images/Main_page_images/ieee_mentor.jpg"
+                        alt="IEEE Mansoura Victoris 5 Game Jam Mentor - Dima Al-Jundi">
+                </div>
+            </div>
+        </section>
+        <section class="cta-section reveal" id="contact">
+            <div class="cta-divider"></div>
+            <div class="cta-content">
+                <span class="intro-text">Have an idea in mind?</span>
+                <h2 class="cta-title">Let’s turn it<br>into a <span class="cta-highlight">Game</span></h2>
+                <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary cta-btn">
+                    <span>Connect on LinkedIn</span>
+                    <svg class="btn-icon cta-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+    <aside class="social-links">
+        <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+    </aside>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <span class="footer-logo-badge">
+                        <img src="Images/Main_page_images/Logo.png" alt="Dema AL-Jundi" class="footer-logo-img">
+                    </span>
+                    <span>Dema AL-Jundi</span>
+                </a>
+                <p class="footer-bio">
+                    Software engineer specializing in game development and design, structured gameplay systems, and
+                    interactive problem solving.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/main_pages/about.html">About me</a></li>
+                    <li><a href="pages/main_pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="pages/main_pages/experience.html">Experience</a></li>
+                    <li><a href="pages/main_pages/skills.html">Skills</a></li>
+                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                    <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                &copy; 2026 Dema AL-Jundi. All rights reserved.
+            </div>
+            <div class="footer-bottom-right">
+                Built by Dema AL-Jundi using Antigravity IDE
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

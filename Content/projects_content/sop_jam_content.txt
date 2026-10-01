@@ -1,0 +1,33 @@
+Overview
+This was my first solo game jam — Sop Game Jam 2026, theme "the critical point," 5 days, built in Godot 3D. Inspired by Buckshot Roulette, the concept: figure out if the person across from you is human or AI by pushing them to their breaking point.
+
+My Role and Responsibilities
+Solo project — everything: design, systems, dialogue, sound.
+
+Process
+I kept the whole game in a single scene (a room, character, and table) on purpose, so I wouldn't burn time building environments and could focus entirely on the core idea. Started with minimal left/right camera movement, then built interactable item logic and character dialogue, using Buckshot Roulette-style mouse-hover interactions on items.
+
+Breakdown
+
+A paper prop gives hints indirectly instead of stating rules outright, so the player has to work it out
+Core loop: ask emotional or logical questions within a 90-second timer to push the subject to their critical point
+Breaking an AI needs the sequence Emotional → Logical → Emotional → Logical (confuses it); breaking a human needs Emotional → Emotional → Logical → Logical (anger builds, then a sudden shift catches them off guard)
+A monitor shows heartbeat and temperature as a secondary read — though an AI subject can manipulate that too
+Dialogue replies can be intentionally misleading, so you can't rely on them alone
+After the timer: give a flower (human) or shoot (AI) — right call gives a true ending, wrong call gives a bad ending
+
+Challenges and Problems Solved
+
+Didn't document much early on, which let ideas blur together and contradict each other
+The game manager ended up as a long chain of if/else statements — recognized afterward that this wasn't a good way to structure it
+Scope crept steadily even though the starting idea was simple, which ate into time meant for testing
+
+Decisions
+Deliberately built as one scene to protect time for the core mechanic instead of environment art — a good call given the 5-day limit, even though the mechanic itself still grew bigger than planned.
+
+Lessons Learned
+
+Recognized if/else sprawl in a game manager as a bad pattern to avoid next time
+Scope creep can happen even after deliberately keeping the concept simple — watch it constantly, not just at the start
+Skipping documentation early causes ideas to blur and contradict each other later
+Ran out of time for real playtesting and balance because design/rule-writing took longer than expected

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collect the Fare - Project</title>
+    <meta name="description" content="Collect the Fare — a 3D mobile game built during my internship at Dimensions studio.">
+    <link rel="icon" type="image/png" href="../../../Images/Main_page_images/Logo.png">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../../../index.html" class="logo" aria-label="Home"><img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img"></a>
+        <nav class="nav-bar"><ul>
+            <li><a href="../../main_pages/about.html">About me</a></li>
+            <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../../main_pages/experience.html">Experience</a></li>
+            <li><a href="../../main_pages/skills.html">Skills</a></li>
+            <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+        </ul></nav>
+    </header>
+
+    <div class="project-video-hero">
+        <video class="project-hero-video" autoplay muted loop playsinline>
+            <source src="../../../Videos/collect_the_fare_cut_hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="project-hero-gradient"></div>
+        <div class="project-hero-content">
+            <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+            <h1>Collect the Fare</h1>
+            <div class="project-tags">
+                <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">3D</span><span class="tag">Mobile</span><span class="tag">Internship</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-content project-details">
+
+        <section class="project-overview-section reveal">
+            <div class="project-overview-text">
+                <h2>Overview</h2>
+                <p>Collect the Fare is a 3D mobile game I worked on for 3 months during my internship at Dimensions game studio. It started as a 2-week intern game jam and evolved through two full concept pivots into an Egyptian microbus dodging traffic illegally, Subway Surfers-style. First time using Unity, first time working in 3D.</p>
+            </div>
+            <div class="project-overview-video">
+                <video autoplay muted loop playsinline>
+                    <source src="../../../Videos/collect_the_fare_cut_hero_video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Phase 1 — The Jam</h2>
+                    <p>Taif suggested an isometric runner, I suggested a panda/bamboo theme: a panda switching between two roads, collecting bamboo, with some levels using a memory pattern puzzle. I learned Unity basics on YouTube beforehand, then split roles with Taif — she did art, roads, and bamboo spawning, I did player movement, camera, and the puzzle system.</p>
+                    <p>Taif, acting more as a supervisor, refactored my first all-in-one player controller into four separate scripts (Player, PlayerMovement, PlayerHealth, PlayerInput) — I learned a lot just watching how she restructured it.</p>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/My Impact & Decisions/game_idea_suggestions1.png" alt="Game idea suggestions 1"></div>
+                            <span class="media-label">Initial game idea suggestions</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/My Impact & Decisions/game_idea_suggestions2.png" alt="Game idea suggestions 2"></div>
+                            <span class="media-label">Concept discussion (continued)</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/My Impact & Decisions/isometric_runner_planning.png" alt="Isometric runner planning"></div>
+                            <span class="media-label">Isometric runner planning sketch</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/Process & Breakdown/panda_runner.jpeg" alt="Panda runner prototype"></div>
+                            <span class="media-label">Panda runner prototype</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/Process & Breakdown/first_ui.jpeg" alt="First UI design"></div>
+                            <span class="media-label">First UI design pass</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Phase 2 — Full Development</h2>
+                    <p>Our game was chosen to keep developing, reworked into a Subway Surfers-style runner. Taif then left the studio; Samer took over as supervisor, with Talal (art) and Qasim (design). The concept shifted again to an Egyptian microbus illegally dodging obstacles.</p>
+                    <p>I was treated like a full employee — added to the studio's GitHub org and to Jira, where I ran my own scrum/kanban tasks for the first time.</p>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/Process & Breakdown/idea_transformation.jpeg" alt="Concept transformation"></div>
+                            <span class="media-label">Game concept through two full pivots</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/Role and Responsibilities/task_assign.png" alt="Jira task assignment"></div>
+                            <span class="media-label">My tasks assigned in Jira</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/Process & Breakdown/mainmenu_ui_making.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Building the main menu UI</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/Process & Breakdown/slowing_down_mechenic_making.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Slowdown mechanic development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>My Responsibilities</h2>
+                    <ul>
+                        <li>Main screen UI and camera balance</li>
+                        <li>Obstacle and sidewalk prop spawning</li>
+                        <li>Passenger pickup/drop-off system</li>
+                        <li>After-continue effect</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Challenges and Problems Solved</h2>
+                    <ul>
+                        <li>Getting a pigeon fly-away animation in the prop system to trigger at the right moment — first real 3D animation work</li>
+                        <li>Passenger jump animations clipped through the bus model — fixed by shrinking passengers as they pass through</li>
+                        <li>Much of my first month's work got rewritten by seniors — pushed me to actually learn refactoring</li>
+                    </ul>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/Challenges and Problems Solved/flying_pigeons_making.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Pigeon fly-away animation trigger</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/Challenges and Problems Solved/making_2lanes_isometric_runner.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">2-lane isometric runner prototype</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>My Impact &amp; Decisions</h2>
+                    <p>Instead of copying Subway Surfers' generic poof-and-go continue effect, I tied it to the game's own fiction: the van stalls briefly after the crash, then suddenly speeds off. I built it with tweens and added matching vroom/drift SFX into an existing scriptable-object audio system without disrupting it.</p>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery single">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source src="../../../Images/Portfolio_images/Projects/content_images_and_videos/collectthefare_page/My Impact & Decisions/collect_the_fare_impact_video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">After-continue stall and speed-off effect</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Lessons Learned</h2>
+                    <ul>
+                        <li>Learned Unity and 3D concepts from the ground up</li>
+                        <li>Learned proper Git branching and team collaboration</li>
+                        <li>Learned to test in isolation using temporary scenes/scripts</li>
+                        <li>Learned spawning/pooling systems and real software architecture (singletons, scriptable objects, event bus, state machine, pooling, interfaces)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="media-modal" id="mediaModal" onclick="closeModal()">
+        <div class="media-modal-inner" onclick="event.stopPropagation()">
+            <button class="media-modal-close" onclick="closeModal()">&times;</button>
+            <img id="modalImg" src="" alt="" style="display:none;">
+            <video id="modalVideo" autoplay muted loop playsinline style="display:none;"></video>
+        </div>
+    </div>
+
+    <aside class="social-links">
+        <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </aside>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../../../index.html" class="footer-logo"><span class="footer-logo-badge"><img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi" class="footer-logo-img"></span><span>Dema AL-Jundi</span></a>
+                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay systems, and interactive problem solving.</p>
+            </div>
+            <div class="footer-col"><h3>Quick Links</h3><ul class="footer-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../main_pages/about.html">About me</a></li>
+                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../../main_pages/experience.html">Experience</a></li>
+                <li><a href="../../main_pages/skills.html">Skills</a></li>
+                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+            </ul></div>
+            <div class="footer-col"><h3>Connect</h3><ul class="footer-links">
+                <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">&copy; 2026 Dema AL-Jundi. All rights reserved.</div>
+            <div class="footer-bottom-right">Built by Dema AL-Jundi using Antigravity IDE</div>
+        </div>
+    </footer>
+
+    <script src="../../../js/script.js"></script>
+    <script>
+        function openMedia(el){const frame=el.querySelector('.project-media-frame');const img=frame?frame.querySelector('img'):null;const vid=frame?frame.querySelector('video'):null;const modal=document.getElementById('mediaModal');const modalImg=document.getElementById('modalImg');const modalVideo=document.getElementById('modalVideo');if(img){modalImg.src=img.src;modalImg.style.display='block';modalVideo.style.display='none';modalVideo.innerHTML='';}else if(vid){const s=vid.querySelector('source');modalVideo.innerHTML=`<source src="${s?s.src:vid.src}" type="video/mp4">`;modalVideo.style.display='block';modalImg.style.display='none';modalImg.src='';modalVideo.load();modalVideo.play();}modal.classList.add('show');document.body.style.overflow='hidden';}
+        function closeModal(){const m=document.getElementById('mediaModal');m.classList.remove('show');document.getElementById('modalVideo').pause();document.getElementById('modalVideo').innerHTML='';document.getElementById('modalImg').src='';document.body.style.overflow='';}
+        document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+    </script>
+</body>
+</html>

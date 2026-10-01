@@ -1,0 +1,42 @@
+Overview
+Kitchen Nightmare (also called Recipe for Betrayal) is a comedic first-person cooking game made for a 1-month summer program at AUB's gaming academy, built in Godot with Leen. The twist: ingredients actively sabotage, gaslight, and ragebait you while you cook. It's still ongoing past the program month.
+
+
+Origin
+I originally wanted a character with AI behavior tied to an SLM but didn't have a full concept. Went low-poly 3D for asset availability (Leen's first 3D project). Leen suggested a cooking game; I added the sabotage/gaslight twist. Leen also suggested the skill system.
+
+My Role and Responsibilities
+All game logic and architecture. Leen handled assets, kitchen scene building, and later sound/UI/transition polish — I helped her through 3D issues since it was her first time (lighting, prefabs, walls, floor).
+
+Process
+I set up the repo and base code while Leen wrote the GDD (I added the missing level-design section). Made a weekly deliverables schedule that turned out unrealistic and didn't stick.
+
+Before writing any gameplay code, I set 4 architecture rules: composition over inheritance, data-driven logic, signal/event bus decoupling, and one reusable state machine. I wrote these into a rules file inside the project for Antigravity IDE to follow, and kept updating it to stop it from generating a separate script per object instead of one shared script. I later learned this was basically an informal TDD (technical design document) — didn't know the term until a week after already doing it.
+
+Breakdown
+
+Data-driven scripts first: levels, ingredients, recipes, player skills
+Core systems: state machine (movement), event bus, level/game/phase managers
+Generalized interactable script for cabinets/fridges (one script, not one per object)
+First-person pickup/release logic
+Station scripts: gathering, cutting board, stove, assembling — focused on making plain cooking work before adding sabotage
+Prototype scope: 3 levels, level 0 as a tutorial introducing the "sneaky egg and bread" ragebait
+
+Challenges and Problems Solved
+
+Held items clipped through anything in front of the player — researched it as a known first-person rendering issue, solved with a second camera rendering only the held item
+Assembling ingredients into a pot/plate needed unique placement per ingredient and per recipe — AI suggested storing coordinates on the ingredient data, which didn't work; worked out on my own that the coordinates belonged on the recipe data instead, since the recipe defines the context each time
+Converting every ingredient prefab to a rigid body with correct collisions per state ate a lot of time
+Delayed the sabotage/ragebait system (the game's second core mechanic) until near the end — in hindsight, a mistake, since it left too little time and I had to shift the final push to audio polish instead
+
+
+How I Used AI
+Used AI (via Antigravity) to write code following my architecture rules, but had to keep correcting it toward shared/general scripts instead of per-object ones. Also consulted Claude on the architecture, a development roadmap, and pattern choices. AI's suggestion for the assembly-placement problem didn't work — had to solve that one myself.
+
+Lessons Learned
+
+Learned to design architecture before writing gameplay code (composition over inheritance, data-driven design, event bus, shared FSM)
+Learned what a TDD is, after already doing an informal version of one
+Core mechanics should be built early, not delayed — sabotage/ragebait being left late nearly cost the whole demo
+AI-generated code needs active correction toward reusable patterns, not just acceptance
+Some problems (like recipe-specific placement) need your own reasoning, not just AI suggestions

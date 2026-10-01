@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujleek - Project</title>
+    <meta name="description"
+        content="Ujleek — an educational web platform and Unity game about mental disorders, built as a graduation project.">
+    <link rel="icon" type="image/png" href="../../../Images/Main_page_images/Logo.png">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../../../index.html" class="logo" aria-label="Home">
+            <img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img">
+        </a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../../main_pages/about.html">About me</a></li>
+                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../../main_pages/experience.html">Experience</a></li>
+                <li><a href="../../main_pages/skills.html">Skills</a></li>
+                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="project-video-hero">
+        <video class="project-hero-video" autoplay muted loop playsinline>
+            <source src="../../../Videos/ujleek_hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="project-hero-gradient"></div>
+        <div class="project-hero-content">
+            <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
+            <h1>Ujleek</h1>
+            <div class="project-tags">
+                <span class="tag">Unity</span>
+                <span class="tag">Puzzle</span>
+                <span class="tag">React</span>
+                <span class="tag">Web</span>
+                <span class="tag">Team Lead</span>
+                <span class="tag">Graduation Project</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-content project-details">
+
+        <!-- Overview -->
+        <section class="project-overview-section reveal">
+            <div class="project-overview-text">
+                <h2>Overview</h2>
+                <p>Ujleek is an educational web platform about common mental disorders for Gen Z, built as my graduation
+                    project with a team of 5 over 2.5 months. It combines a written platform with an interactive web
+                    game, aimed at making mental health information short, easy to digest, and Gen-Z-friendly.</p>
+            </div>
+            <div class="project-overview-video">
+                <video autoplay muted loop playsinline>
+                    <source src="../../../Videos/ujleek_hero_video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- My Role -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>My Role</h2>
+                    <p>Team lead. Planned the site structure and content architecture, ran Scrum sprints in Jira, taught
+                        teammates unfamiliar with GitHub/Jira, ran planning meetings, and built the Unity game myself.
+                    </p>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Role and Responsibilities/jira_explainning.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Teaching the team how Jira works</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Role and Responsibilities/github_explainning.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Teaching the team GitHub workflow</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Role and Responsibilities/design_planning.png"
+                                    alt="Design planning">
+                            </div>
+                            <span class="media-label">Site structure and design planning</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Role and Responsibilities/telling_each_teammate_their_responsabilities1.png"
+                                    alt="Assigning responsibilities">
+                            </div>
+                            <span class="media-label">Assigning teammate responsibilities</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Role and Responsibilities/telling_each_teammate_their_responsabilities2.png"
+                                    alt="Assigning responsibilities 2">
+                            </div>
+                            <span class="media-label">Assigning teammate responsibilities (continued)</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Role and Responsibilities/my_feedbacks_after_testing.png"
+                                    alt="Feedback after testing">
+                            </div>
+                            <span class="media-label">My feedback after testing the site</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- The Website -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>The Website</h2>
+                    <h3>Team and Process</h3>
+                    <p>Roles: Zain and Doaa on web dev, Raya and Maha on web design.
+                        I planned 4 sprints in Jira: (Planning , Content and design , Implementation , Testing and
+                        feedbacks).</p>
+
+                    <h3>Decisions</h3>
+                    <p>In design sprint i asked the design team to use Figma; they weren't familiar with it and
+                        used Canva instead.I noticed early that the design direction was off , the team hadn't looked at
+                        enough references
+                        but they'd already put in effort and didn't want to redo it, so I let it go. I built the site's
+                        structure and content layout myself; the design team turned that into visuals in Canva.</p>
+                    <p>I also planned how mental-disorder content should be broken down (causes, roots, how the brain
+                        processes it), then had each teammate pick a disorder to research in a shared document format.
+                    </p>
+                    <p>I suggested to make nav buttons scroll to sections instead of linking directly to pages</p>
+                    <h3>Breakdown</h3>
+                    <ul>
+                        <li>Dev team built the Canva design using React, added the 5 disorder pages and a quick
+                            10-question screening quiz per disorder.</li>
+                        <li>Zain made the quiz logic with Raya's help and she also built every non-disorder page; also
+                            proposed and started a
+                            chatbot for advice.</li>
+                        <li>Doaa implemented the disorder pages.</li>
+                    </ul>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/My Impact & Decisions/jira_tasks.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Sprint tasks in Jira</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/My Impact & Decisions/base_disorders_page_design.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Base design i chose for disorders page</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/My Impact & Decisions/about_us_page.png"
+                                    alt="About us page">
+                            </div>
+                            <span class="media-label">About us page i suggest to add it</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Challenges and Problems Solved</h2>
+                    <ul>
+                        <li>Zain's chatbot exposed its API key in the frontend , I fixed it by building a backend with
+                            an AI coding agent, keeping the key as an environment variable, deployed on both Netlify and
+                            Vercel.</li>
+                        <li>I originally scoped the site to PC/laptop only to keep it manageable for a grad project; the
+                            team pushed for mobile too , then we found the code wasn't responsive at all. I used Claude
+                            Haiku in VS to make the whole codebase responsive in one pass.</li>
+                    </ul>
+
+                    <h3>Redesign Pass</h3>
+                    <p>After the full site was built, Zain and I knew something was off, so we redid the main page with
+                        better references moved the nav bar to the right (site is in Arabic),Zain turned "Gen Z" into an
+                        intro section instead
+                        of its own page, i added a nostalgia image slider idea, used
+                        a zig-zag section layout, and moved stats to the bottom. Got the disorder-page layout design
+                        from Claude and had the team adapt it to our theme.</p>
+                    <div class="project-media-col">
+                        <div class="project-media-gallery multi">
+                            <div class="project-media-item" onclick="openMedia(this)">
+                                <div class="project-media-frame">
+                                    <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/My Impact & Decisions/nostalga_slider.png"
+                                        alt="Nostalgia slider">
+                                </div>
+                                <span class="media-label">Nostalgia slider i referenced from Udio's website</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Game -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Part 2 — The Game</h2>
+                    <h3>Design</h3>
+                    <p>A 3D low-poly prototype focused on Anxiety disorder alone , scoped down from an original idea of
+                        one location per disorder. Set entirely in a house; using a house specifically pushes back on a
+                        common misconception in the Middle East that these disorders are situational rather than
+                        something you carry everywhere and for anxiety most unexpectable place is at home.</p>
+                    <p>3 core systems: Anixty meter , breathing system, and a limited medicine system, using one reduce
+                        anixty but slows
+                        movement and blurs vision, signaling that it helps but has a cost.</p>
+
+                    <h3>Color Theory</h3>
+                    <p>Orange represents anxiety (referencing Inside Out 2), used across assets and lighting that
+                        darkens as anxiety rises. The final room, once you've resolved all three, shifts to blue
+                        (orange's
+                        opposite) for comfort and closure.</p>
+
+                    <h3>Three Rooms</h3>
+                    <ul>
+                        <li>Attachment Anxiety: a phone call guides a puzzle, then cuts off; anxiety rises to a panic
+                            attack unless you find the item the caller pointed at</li>
+                        <li>Social Anxiety: judging voices in a dark room; hiding in the bathroom backfires; finding a
+                            missing light-switch piece lights the room and reveals no one was ever there</li>
+                        <li>Agoraphobia: locked in a kitchen, vision narrowing; the only way out is to stay still and
+                            breathe correctly</li>
+                    </ul>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Process & Breakdown/GDD1.png"
+                                    alt="GDD page 1">
+                            </div>
+                            <span class="media-label">Game Design Document — page 1</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Process & Breakdown/GDD2.png"
+                                    alt="GDD page 2">
+                            </div>
+                            <span class="media-label">Game Design Document — page 2</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Process & Breakdown/Research.png"
+                                    alt="Research document">
+                            </div>
+                            <span class="media-label">Disorder research document</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Process & Breakdown/game_schadule.png"
+                                    alt="Game development schedule">
+                            </div>
+                            <span class="media-label">6-week game development schedule</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Process & Breakdown/game_art_&gameplay_inspire.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Art style and gameplay inspirations</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Process & Breakdown/house_making.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Building the house environment</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Process & Breakdown/last_room_making.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Building the final comfort room</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Challenges -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Game — Challenges</h2>
+                    <ul>
+                        <li>First time building a full 3D scene , i oversized the house which made real-time lights
+                            barely
+                            visible; so i spent lot of time before i diagnosed the issue; by turning a light red and
+                            moving it to the ground to isolate the scale
+                            issue, then shrinking the house</li>
+                        <li>Started game dev in early April, ~6 weeks before deadline, while still running the rest of
+                            the project</li>
+                        <li>Recorded real voice acting from myself and people I know instead of AI voices ,
+                            scoping a project needing this much voice acting was a mistake</li>
+                        <li>When i was rotating any object (3D model) the model scale becomes ununiformed , an artist a
+                            know told me that the problem might be that i placed this object
+                            inside a nested objects , so i moved them to the main scene.
+                        </li>
+                        <li>No optimization knowledge with 1 week left: WebGL export crashed within minutes, baking
+                            lights turned some objects black , ultimately i dropped the browser/WebGL goal entirely</li>
+                    </ul>
+                </div>
+                <div class="project-media-col">
+                    <div class="project-media-gallery multi">
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Challenges and Problems Solved/rotaion_problem.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Camera rotation glitch</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ujleek_page/Challenges and Problems Solved/web_build_lagging.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">WebGL build crashing within minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section class="project-section reveal">
+            <div class="project-section-inner">
+                <div class="project-text-col">
+                    <h2>Lessons Learned</h2>
+                    <ul>
+                        <li>For browser-based games, go 2D , real-time 3D lighting causes major web-export problems and
+                            forces you to cut ideas.</li>
+                        <li>Don't scope voice-heavy content without a realistic plan for recording it.</li>
+                        <li>Keep floating text and narration consistent , mismatched messaging confuses players.</li>
+                        <li>AI-generated code architecture needs active correction and supervision. So plan code
+                            architecture early,
+                            small late-stage fixes cascading into new bugs is a sign it's too fragile.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="media-modal" id="mediaModal" onclick="closeModal()">
+        <div class="media-modal-inner" onclick="event.stopPropagation()">
+            <button class="media-modal-close" onclick="closeModal()">&times;</button>
+            <img id="modalImg" src="" alt="" style="display:none;">
+            <video id="modalVideo" autoplay muted loop playsinline style="display:none;"></video>
+        </div>
+    </div>
+
+    <aside class="social-links">
+        <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </aside>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../../../index.html" class="footer-logo">
+                    <span class="footer-logo-badge"><img src="../../../Images/Main_page_images/Logo.png"
+                            alt="Dema AL-Jundi" class="footer-logo-img"></span>
+                    <span>Dema AL-Jundi</span>
+                </a>
+                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay
+                    systems, and interactive problem solving.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../main_pages/about.html">About me</a></li>
+                    <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../../main_pages/experience.html">Experience</a></li>
+                    <li><a href="../../main_pages/skills.html">Skills</a></li>
+                    <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                    <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">&copy; 2026 Dema AL-Jundi. All rights reserved.</div>
+            <div class="footer-bottom-right">Built by Dema AL-Jundi using Antigravity IDE</div>
+        </div>
+    </footer>
+
+    <script src="../../../js/script.js"></script>
+    <script>
+        function openMedia(el) {
+            const frame = el.querySelector('.project-media-frame');
+            const img = frame ? frame.querySelector('img') : null;
+            const vid = frame ? frame.querySelector('video') : null;
+            const modal = document.getElementById('mediaModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalVideo = document.getElementById('modalVideo');
+            if (img) { modalImg.src = img.src; modalImg.style.display = 'block'; modalVideo.style.display = 'none'; modalVideo.innerHTML = ''; }
+            else if (vid) { const s = vid.querySelector('source'); modalVideo.innerHTML = `<source src="${s ? s.src : vid.src}" type="video/mp4">`; modalVideo.style.display = 'block'; modalImg.style.display = 'none'; modalImg.src = ''; modalVideo.load(); modalVideo.play(); }
+            modal.classList.add('show'); document.body.style.overflow = 'hidden';
+        }
+        function closeModal() { const m = document.getElementById('mediaModal'); m.classList.remove('show'); document.getElementById('modalVideo').pause(); document.getElementById('modalVideo').innerHTML = ''; document.getElementById('modalImg').src = ''; document.body.style.overflow = ''; }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    </script>
+</body>
+
+</html>

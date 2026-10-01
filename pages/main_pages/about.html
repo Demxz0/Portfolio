@@ -1,0 +1,503 @@
+<!--
+OPERATIONAL PURPOSE:
+Renders the personal profile, professional philosophy, key development competencies, and visual vibe carousel for Dima Al-Jundi's game developer portfolio.
+
+INTERNAL MECHANICS:
+- .about-hero-showcase: Flex row placing the circular personal profile (.profile-pic-container) and duo milestone photography cards (.about-side-images) parallel at the top of the page.
+- .about-profile-img: Calibrated object-position (50% 10%) ensuring vertical and horizontal centering of the developer's face inside the circular frame.
+- .about-side-images / .about-img-card: Duo landscape photo cards with responsive framing, rounded borders, and hover elevation effects.
+- .about-tagline / .tagline-highlight: Emphasized primary tagline with glowing accent color on the core action philosophy ('picture, wire, solve.').
+- .about-bio-intro: Hero biographical introduction detailing software engineering foundation and game development rigor.
+- .about-sections-grid / .about-section-card: Modern CSS card grid displaying categorized capabilities, workflow patterns, and personal interests with custom accent markers.
+- .vibe-slider-section: Continuous sliding track displaying visual aesthetic inspirations.
+
+EXTERNAL DEPENDENCIES:
+- Stylesheets: ../../css/style.css, Font Awesome 6.4.0 (all.min.css)
+- Media Assets: ../../Images/Main_page_images/Logo.png, ../../Images/About_images/profile.jpg, ../../Images/About_images/image1.jpg, ../../Images/About_images/image2.JPG
+- Scripts: ../../js/script.js
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="icon" type="image/png" href="../../Images/Main_page_images/Logo.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../../index.html" class="logo" aria-label="Home">
+            <img src="../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img">
+        </a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="../../resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-content">
+        <h1>What is all about me?</h1>
+
+        <div class="about-hero-showcase">
+            <div class="about-hero-main">
+                <div class="profile-pic-container">
+                    <img src="../../Images/About_images/profile.jpg" alt="Dima Al-Jundi Profile Picture"
+                        class="about-profile-img">
+                </div>
+                <div class="about-hero-text">
+                    <h2 class="about-tagline">I close my eyes, <span class="tagline-highlight">picture, wire,
+                            solve.</span></h2>
+                    <div class="about-bio-intro">
+                        <p><strong>My name is Dima Al-Jundi.</strong> I'm a software engineer with a deep love for
+                            games. I don't just play them, I obsess over how they're built. I bring code-quality habits
+                            into gameplay programming and design games based on knowledge and feedbacks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-side-images">
+                <div class="about-img-card">
+                    <img src="../../Images/About_images/image1.jpg" alt="Dima Al-Jundi Speaking at Game Event"
+                        class="about-side-img about-pres-img">
+                </div>
+                <div class="about-img-card">
+                    <img src="../../Images/About_images/image2.JPG" alt="Dima Al-Jundi Graduation"
+                        class="about-side-img about-grad-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="about-games-section">
+            <h2 class="section-title-large">Games are my favorite kind of system.</h2>
+            <p class="section-subtitle">I work in Godot (GDScript) and Unity (C#), and Godot is my pick. I've touched
+                most disciplines of indie development, but gameplay programming and SFX design are where I'm strongest.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">game jams entered</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1st</span>
+                    <span class="stat-label">place in one jam</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">engines: Godot and Unity</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-i-work-section reveal">
+            <div class="hiw-header">
+                <h2 class="section-title-large">How I work</h2>
+                <p class="section-subtitle">Calm, structured, and quick to fix what breaks.</p>
+            </div>
+            <div class="hiw-empty"></div>
+
+            <div class="hiw-item">
+                <h4>Analytical</h4>
+                <p>I break problems down and turn messy complexity into systems I can manage.</p>
+            </div>
+            <div class="hiw-item">
+                <h4>Natural leader</h4>
+                <p>I split up tasks, read people, manage time, and own the outcome.</p>
+            </div>
+            <div class="hiw-item">
+                <h4>Calm under pressure</h4>
+                <p>When something breaks, I fix it instead of panicking.</p>
+            </div>
+            <div class="hiw-item">
+                <h4>Quiet until game design</h4>
+                <p>Ask me about something I know well and I won't stop talking.</p>
+            </div>
+        </div>
+
+        <div class="my-process-section reveal">
+            <div class="process-header">
+                <h2 class="section-title-large">My process</h2>
+                <p class="section-subtitle">Ideas start rough and get structure only when they need it.</p>
+            </div>
+
+            <div class="process-flow">
+                <div class="process-step">
+                    <span class="step-label">Capture</span>
+                    <span class="step-value">Notepad</span>
+                </div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">
+                    <span class="step-label">Structure</span>
+                    <span class="step-value">Google Docs</span>
+                </div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">
+                    <span class="step-label">Build</span>
+                    <span class="step-value">My own code</span>
+                </div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">
+                    <span class="step-label">Fix</span>
+                    <span class="step-value">Debug</span>
+                </div>
+            </div>
+
+            <div class="ai-workflow-card">
+                <div class="ai-workflow-col">
+                    <h4 class="ai-col-title">I do it myself</h4>
+                    <ul class="ai-col-list">
+                        <li>Ideation and game design docs</li>
+                        <li>Code architecture and engineering decisions</li>
+                        <li>Hard bugs the AI gets stuck on</li>
+                    </ul>
+                </div>
+                <div class="ai-workflow-col">
+                    <h4 class="ai-col-title">AI helps with</h4>
+                    <ul class="ai-col-list">
+                        <li>Polishing my writing</li>
+                        <li>Repetitive, well-understood implementation</li>
+                        <li>A first pass at common bugs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="learning-section reveal">
+            <h2 class="section-title-large">What I'm learning now</h2>
+            <p class="section-subtitle">I'm leveling up on the technical side and widening the platforms I can ship on.
+            </p>
+
+            <div class="learning-grid">
+                <div class="learning-item">
+                    <h4>Performance</h4>
+                    <p>Optimization and engine profiling.</p>
+                </div>
+                <div class="learning-item">
+                    <h4>Modding</h4>
+                    <p>Building mods for existing games.</p>
+                </div>
+                <div class="learning-item">
+                    <h4>New platforms</h4>
+                    <p>Roblox Studio and Unreal Editor for Fortnite.</p>
+                </div>
+                <div class="learning-item">
+                    <h4>Multiplayer / Co-op</h4>
+                    <p>Learning to make multiplayer/co-op games.</p>
+                </div>
+            </div>
+
+            <div class="availability-badge">
+                <span class="pulse-dot"></span> Open to full-time roles, contract work and indie collaborations
+            </div>
+        </div>
+
+        <div class="gamify-section reveal">
+            <div class="gamify-carousel-container">
+                <div class="carousel-display">
+                    <img src="../../Images/About_images/Notion_captures/Screenshot 2026-09-30 164420.png"
+                        alt="Gamification Screenshot 1" class="carousel-img active">
+                    <img src="../../Images/About_images/Notion_captures/Screenshot 2026-09-30 164455.png"
+                        alt="Gamification Screenshot 2" class="carousel-img">
+                    <img src="../../Images/About_images/Notion_captures/Screenshot 2026-09-30 164631.png"
+                        alt="Gamification Screenshot 3" class="carousel-img">
+                    <img src="../../Images/About_images/Notion_captures/Screenshot 2026-09-30 164738.png"
+                        alt="Gamification Screenshot 4" class="carousel-img">
+                    <img src="../../Images/About_images/Notion_captures/Screenshot 2026-09-30 164805.png"
+                        alt="Gamification Screenshot 5" class="carousel-img">
+                    <img src="../../Images/About_images/Notion_captures/Screenshot 2026-09-30 165023.png"
+                        alt="Gamification Screenshot 6" class="carousel-img">
+                </div>
+
+                <div class="carousel-controls">
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                        <span class="dot" data-index="5"></span>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-btn prev-btn" aria-label="Previous image"><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <button class="carousel-btn next-btn" aria-label="Next image"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                        <button class="carousel-btn fullscreen-btn" aria-label="View fullscreen"><i
+                                class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gamify-text">
+                <h2 class="section-title-large">I turned my life into a game.</h2>
+                <p class="section-subtitle">I gamify almost everything. My habits and goals live in a Notion system with
+                    quests, progress and rewards.</p>
+            </div>
+        </div>
+
+        <div class="outside-dev-section reveal">
+            <div class="section-header-left">
+                <h2 class="section-title-large">Outside of dev</h2>
+                <p class="section-subtitle">A big imagination that's always making up ideas and stories. It's the reason
+                    I leave an impact.</p>
+            </div>
+
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>Calisthenics</span>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-solid fa-pen"></i>
+                    <span>Drawing</span>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>Cooking</span>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <span>Anime</span>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-solid fa-tv"></i>
+                    <span>English series</span>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-regular fa-message"></i>
+                    <span>Memes</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fullscreen Carousel Modal -->
+        <div class="carousel-modal" id="carouselModal">
+            <span class="modal-close" id="closeCarouselModal"><i class="fa-solid fa-xmark"></i></span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <div class="vibe-section reveal">
+            <h2 class="section-title-large" style="margin-bottom: 40px;">My Vibe</h2>
+
+            <div class="vibe-split-layout">
+                <!-- Left: Auto-Scrolling Image Slider -->
+                <div class="vibe-left">
+                    <div class="vibe-slider-wrapper">
+                        <div class="vibe-slider-track">
+                            <img src="../../Images/About_images/Vibes/photo_1_2026-09-30_16-57-03.jpg" alt="Vibe 1"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_2_2026-09-30_16-57-03.jpg" alt="Vibe 2"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_4_2026-09-30_16-57-03.jpg" alt="Vibe 4"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_5_2026-09-30_16-57-03.jpg" alt="Vibe 5"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_6_2026-09-30_16-57-03.jpg" alt="Vibe 6"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_7_2026-09-30_16-57-03.jpg" alt="Vibe 7"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_8_2026-09-30_16-57-03.jpg" alt="Vibe 8"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_9_2026-09-30_16-57-03.jpg" alt="Vibe 9"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_10_2026-09-30_16-57-03.jpg" alt="Vibe 10"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_11_2026-09-30_16-57-03.jpg" alt="Vibe 11"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_12_2026-09-30_16-57-03.jpg" alt="Vibe 12"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_13_2026-09-30_16-57-03.jpg" alt="Vibe 13"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_14_2026-09-30_16-57-03.jpg" alt="Vibe 14"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_15_2026-09-30_16-57-03.jpg" alt="Vibe 15"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_16_2026-09-30_16-57-03.jpg" alt="Vibe 16"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_17_2026-09-30_16-57-03.jpg" alt="Vibe 17"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_18_2026-09-30_16-57-03.jpg" alt="Vibe 18"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_19_2026-09-30_16-57-03.jpg" alt="Vibe 19"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_20_2026-09-30_16-57-03.jpg" alt="Vibe 20"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_21_2026-09-30_16-57-03.jpg" alt="Vibe 21"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_22_2026-09-30_16-57-03.jpg" alt="Vibe 22"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_23_2026-09-30_16-57-03.jpg" alt="Vibe 23"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_24_2026-09-30_16-57-03.jpg" alt="Vibe 24"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_25_2026-09-30_16-57-03.jpg" alt="Vibe 25"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_26_2026-09-30_16-57-03.jpg" alt="Vibe 26"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_27_2026-09-30_16-57-03.jpg" alt="Vibe 27"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_28_2026-09-30_16-57-03.jpg" alt="Vibe 28"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_29_2026-09-30_16-57-03.jpg" alt="Vibe 29"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_30_2026-09-30_16-57-03.jpg" alt="Vibe 30"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_31_2026-09-30_16-57-03.jpg" alt="Vibe 31"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_33_2026-09-30_16-57-03.jpg" alt="Vibe 33"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_34_2026-09-30_16-57-03.jpg" alt="Vibe 34"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_36_2026-09-30_16-57-03.jpg" alt="Vibe 36"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_37_2026-09-30_16-57-03.jpg" alt="Vibe 37"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_38_2026-09-30_16-57-03.jpg" alt="Vibe 38"
+                                class="vibe-slide">
+                            <!-- Duplicates for seamless infinite scrolling -->
+                            <img src="../../Images/About_images/Vibes/photo_1_2026-09-30_16-57-03.jpg" alt="Vibe 1"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_2_2026-09-30_16-57-03.jpg" alt="Vibe 2"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_4_2026-09-30_16-57-03.jpg" alt="Vibe 4"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_5_2026-09-30_16-57-03.jpg" alt="Vibe 5"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_6_2026-09-30_16-57-03.jpg" alt="Vibe 6"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_7_2026-09-30_16-57-03.jpg" alt="Vibe 7"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_8_2026-09-30_16-57-03.jpg" alt="Vibe 8"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_9_2026-09-30_16-57-03.jpg" alt="Vibe 9"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_10_2026-09-30_16-57-03.jpg" alt="Vibe 10"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_11_2026-09-30_16-57-03.jpg" alt="Vibe 11"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_12_2026-09-30_16-57-03.jpg" alt="Vibe 12"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_13_2026-09-30_16-57-03.jpg" alt="Vibe 13"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_14_2026-09-30_16-57-03.jpg" alt="Vibe 14"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_15_2026-09-30_16-57-03.jpg" alt="Vibe 15"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_16_2026-09-30_16-57-03.jpg" alt="Vibe 16"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_17_2026-09-30_16-57-03.jpg" alt="Vibe 17"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_18_2026-09-30_16-57-03.jpg" alt="Vibe 18"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_19_2026-09-30_16-57-03.jpg" alt="Vibe 19"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_20_2026-09-30_16-57-03.jpg" alt="Vibe 20"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_21_2026-09-30_16-57-03.jpg" alt="Vibe 21"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_22_2026-09-30_16-57-03.jpg" alt="Vibe 22"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_23_2026-09-30_16-57-03.jpg" alt="Vibe 23"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_24_2026-09-30_16-57-03.jpg" alt="Vibe 24"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_25_2026-09-30_16-57-03.jpg" alt="Vibe 25"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_26_2026-09-30_16-57-03.jpg" alt="Vibe 26"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_27_2026-09-30_16-57-03.jpg" alt="Vibe 27"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_28_2026-09-30_16-57-03.jpg" alt="Vibe 28"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_29_2026-09-30_16-57-03.jpg" alt="Vibe 29"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_30_2026-09-30_16-57-03.jpg" alt="Vibe 30"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_31_2026-09-30_16-57-03.jpg" alt="Vibe 31"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_33_2026-09-30_16-57-03.jpg" alt="Vibe 33"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_34_2026-09-30_16-57-03.jpg" alt="Vibe 34"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_36_2026-09-30_16-57-03.jpg" alt="Vibe 36"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_37_2026-09-30_16-57-03.jpg" alt="Vibe 37"
+                                class="vibe-slide">
+                            <img src="../../Images/About_images/Vibes/photo_38_2026-09-30_16-57-03.jpg" alt="Vibe 38"
+                                class="vibe-slide">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Autoplay Video -->
+                <div class="vibe-right-wrapper" style="flex: 1; display: flex; flex-direction: column;">
+                    <h3 class="section-title-large" style="margin-bottom: 40px; font-size: 2rem;">Each character has a flavor of me</h3>
+                    <div class="vibe-right" style="width: 100%; flex: 1;">
+                        <div class="vibe-video-container">
+                            <video autoplay loop muted playsinline class="vibe-video">
+                                <source src="../../Videos/about_me_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside class="social-links">
+        <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </aside>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="../../index.html" class="footer-logo">
+                    <span class="footer-logo-badge"><img src="../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi" class="footer-logo-img"></span>
+                    <span>Dema AL-Jundi</span>
+                </a>
+                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay systems, and interactive problem solving.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="../../resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                    <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">&copy; 2026 Dema AL-Jundi. All rights reserved.</div>
+            <div class="footer-bottom-right">Built by Dema AL-Jundi using Antigravity IDE</div>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

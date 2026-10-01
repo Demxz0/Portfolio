@@ -437,14 +437,15 @@ EXTERNAL DEPENDENCIES:
                     </div>
                 </div>
 
-                <!-- Right: Autoplay Video Placeholder -->
-                <div class="vibe-right">
-                    <div class="vibe-video-container">
-                        <video autoplay loop muted playsinline class="vibe-video">
-                            <!-- Placeholder video. The user can swap src later -->
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                        </video>
-                        <div class="video-overlay-text">Video Placeholder</div>
+                <!-- Right: Autoplay Video -->
+                <div class="vibe-right-wrapper" style="flex: 1; display: flex; flex-direction: column;">
+                    <h3 class="section-title-large" style="margin-bottom: 40px; font-size: 2rem;">Each character has a flavor of me</h3>
+                    <div class="vibe-right" style="width: 100%; flex: 1;">
+                        <div class="vibe-video-container">
+                            <video autoplay loop muted playsinline class="vibe-video">
+                                <source src="../../Videos/about_me_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>

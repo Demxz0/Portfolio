@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitchen Nightmare - Project</title>
     <meta name="description"
-        content="Kitchen Nightmare — a comedic first-person cooking game with sabotaging ingredients, built in Godot with strict architecture principles.">
+        content="Kitchen Nightmare â€” a comedic first-person cooking game with sabotaging ingredients, built in Godot with strict architecture principles.">
     <link rel="icon" type="image/png" href="../../../Images/Main_page_images/Logo.png">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,7 +22,7 @@
                 <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
                 <li><a href="../../main_pages/experience.html">Experience</a></li>
                 <li><a href="../../main_pages/skills.html">Skills</a></li>
-                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="../../../Dima_Aljundi_Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -52,6 +52,8 @@
                     is that all ingredients actively sabotage, gaslight, and ragebait you while you cook. It's still
                     ongoing past the program
                     month.</p>
+                <a href="https://lilithofthevalley.itch.io/kitchen-nightmare" class="btn btn-primary" target="_blank"
+                    style="margin-top: 15px; width: max-content;">Play the game</a>
             </div>
             <div class="project-overview-video">
                 <video autoplay muted loop playsinline>
@@ -100,16 +102,14 @@
                 <div class="project-media-col">
                     <div class="project-media-gallery multi">
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img
-                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Process & Breakdown/schdule.png"
-                                    alt="Development schedule"></div>
-                            <span class="media-label">Weekly development schedule</span>
-                        </div>
-                        <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img
-                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Process & Breakdown/lighting_suggestions.png"
-                                    alt="Lighting suggestions"></div>
-                            <span class="media-label">Lighting suggestions for Leen's scene</span>
+                            <div class="project-media-frame">
+                                <video autoplay muted loop playsinline>
+                                    <source
+                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/audio_system_refactoring.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="media-label">Audio system refactoring</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame">
@@ -119,7 +119,7 @@
                                         type="video/mp4">
                                 </video>
                             </div>
-                            <span class="media-label">Kitchen prefab being assembled</span>
+                            <span class="media-label">Kitchen prefab making</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame">
@@ -129,7 +129,7 @@
                                         type="video/mp4">
                                 </video>
                             </div>
-                            <span class="media-label">First-person pickup and release logic</span>
+                            <span class="media-label">Pickup and release logic making</span>
                         </div>
                     </div>
                 </div>
@@ -145,13 +145,19 @@
                         <li>Held items clipped through anything in front of the player, so I researched the problem
                             and found a known solution for every first person game. A second camera rendering only the
                             held item.</li>
-                        <li>Assembling ingredients into a pot/plate needed unique placement per ingredient per recipe —
+                        <li>Assembling ingredients into a pot/plate needed unique placement per ingredient per recipe â€”
                             AI suggested storing coordinates on the ingredient data, which didn't work; i solved the
                             problem on my own
                             by realizing that coordinates belong on the recipe data instead.</li>
+                        <li>Lighting was casting on one curtain and not the other one, making them look as if they were
+                            2 different colors , and since they share one mesh we can not add light on just one of them
+                            in isolated layer.</li>
                         <li>Delayed the sabotage/ragebait system until near the end, which left too little time and I
                             had to
                             shift the final push to audio polish instead.</li>
+                        <li>I wrote deliverables schedule for the fist month but it was not realistic or accurate enough
+                            so
+                            we pretty much did not follow it.</li>
                     </ul>
                 </div>
                 <div class="project-media-col">
@@ -164,7 +170,7 @@
                                         type="video/mp4">
                                 </video>
                             </div>
-                            <span class="media-label">Item clipping through walls (before fix)</span>
+                            <span class="media-label">Items clipping (before fix)</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame">
@@ -174,47 +180,49 @@
                                         type="video/mp4">
                                 </video>
                             </div>
-                            <span class="media-label">Curtain rendering glitch</span>
+                            <span class="media-label">Curtains lighting problem</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame">
-                                <video autoplay muted loop playsinline>
-                                    <source
-                                        src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/audio_system_refactoring.mp4"
-                                        type="video/mp4">
-                                </video>
-                            </div>
-                            <span class="media-label">Audio system refactoring session</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Process & Breakdown/schdule.png"
+                                    alt="Development schedule"></div>
+                            <span class="media-label">Deliverables schedule</span>
+                        </div>
+                        <div class="project-media-item" onclick="openMedia(this)">
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Process & Breakdown/lighting_suggestions.png"
+                                    alt="Lighting suggestions"></div>
+                            <span class="media-label">Lighting suggestions</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame"><img
                                     src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems1.png"
                                     alt="Problem 1"></div>
-                            <span class="media-label">Bug encountered during development</span>
+                            <span class="media-label">General bugs (before fix)</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame"><img
                                     src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems5.png"
                                     alt="Problem 2"></div>
-                            <span class="media-label">Bug encountered during development</span>
+                            <span class="media-label">General bugs (before fix)</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame"><img
                                     src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems3.png"
                                     alt="Problem 3"></div>
-                            <span class="media-label">Bug encountered during development</span>
+                            <span class="media-label">Assembling problem (before fix)</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame"><img
                                     src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems4.png"
                                     alt="Problem 4"></div>
-                            <span class="media-label">Bug encountered during development</span>
+                            <span class="media-label">Assembling problem (before fix)</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame"><img
                                     src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/Challenges and Problems Solved/problems2.png"
                                     alt="Problem 5"></div>
-                            <span class="media-label">Bug encountered during development</span>
+                            <span class="media-label">General bugs (before fix)</span>
                         </div>
                     </div>
                 </div>
@@ -228,7 +236,8 @@
                     <h2>My Impact &amp; Decisions</h2>
                     <p>Set Architecture rules before writing any code, which is essentially an informal TDD
                         (technical design document). I didn't know the term until a week after already doing it.
-                        I also added level-design section in the GDD.</p>
+                        I also added level-design section in the GDD. The checklist idea was inspired from "Untitled
+                        goose" game.</p>
                 </div>
                 <div class="project-media-col">
                     <div class="project-media-gallery multi">
@@ -236,13 +245,13 @@
                             <div class="project-media-frame"><img
                                     src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/My Impact & Decisions/my_addtion_on_GDD.png"
                                     alt="My GDD addition"></div>
-                            <span class="media-label">Level-design section I added to the GDD</span>
+                            <span class="media-label">Level-design section I added</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
                             <div class="project-media-frame"><img
                                     src="../../../Images/Portfolio_images/Projects/content_images_and_videos/kitchennightmare_page/My Impact & Decisions/checklist_inspire.png"
                                     alt="Checklist inspiration"></div>
-                            <span class="media-label">Checklist UI inspiration reference</span>
+                            <span class="media-label">"Untitled goose" checklist reference</span>
                         </div>
                     </div>
                 </div>
@@ -251,7 +260,7 @@
         </section>
 
         <section class="project-section reveal">
-            <div class="project-section-inner">
+            <div class="project-section-inner split-text">
                 <div class="project-text-col">
                     <h2>Lessons Learned</h2>
                     <ul>
@@ -260,6 +269,20 @@
                         <li>Core mechanics should be built early, not delayed.</li>
                         <li>Project deliverables and timelines should be realistic.</li>
                         <li>First-Person clipping solution.</li>
+                    </ul>
+                </div>
+                <div class="project-text-col">
+                    <h2>Future work</h2>
+                    <ul>
+                        <li>Adding ingredients effect system.</li>
+                        <li>Adjust lighting.</li>
+                        <li>Add progression system.</li>
+                        <li>writing proper TDD.</li>
+                        <li>Localization.</li>
+                        <li>Adding more levels.</li>
+                        <li>Add co-op mode.</li>
+                        <li>Make progression saving.</li>
+                        <li>More polishing.</li>
                     </ul>
                 </div>
             </div>
@@ -283,7 +306,6 @@
                 class="fa-brands fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
                 class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
     </aside>
 
     <footer class="footer">
@@ -303,7 +325,7 @@
                     <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
                     <li><a href="../../main_pages/experience.html">Experience</a></li>
                     <li><a href="../../main_pages/skills.html">Skills</a></li>
-                    <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="../../../Dima_Aljundi_Resume.pdf" target="_blank">Resume</a></li>
                 </ul>
             </div>
             <div class="footer-col">

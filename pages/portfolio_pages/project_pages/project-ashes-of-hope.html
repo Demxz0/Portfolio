@@ -1,24 +1,30 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashes of Hope - Project</title>
-    <meta name="description" content="Ashes of Hope — a visual novel made in 10 days for SheJam that won the Cultural Impact award.">
+    <meta name="description"
+        content="Ashes of Hope â€” a visual novel made in 10 days for SheJam that won the Cultural Impact award.">
     <link rel="icon" type="image/png" href="../../../Images/Main_page_images/Logo.png">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header">
-        <a href="../../../index.html" class="logo" aria-label="Home"><img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img"></a>
-        <nav class="nav-bar"><ul>
-            <li><a href="../../main_pages/about.html">About me</a></li>
-            <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../../main_pages/experience.html">Experience</a></li>
-            <li><a href="../../main_pages/skills.html">Skills</a></li>
-            <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
-        </ul></nav>
+        <a href="../../../index.html" class="logo" aria-label="Home"><img
+                src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img"></a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../../main_pages/about.html">About me</a></li>
+                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../../main_pages/experience.html">Experience</a></li>
+                <li><a href="../../main_pages/skills.html">Skills</a></li>
+                <li><a href="../../../Dima_Aljundi_Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="project-video-hero">
@@ -30,7 +36,8 @@
             <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
             <h1>Ashes of Hope</h1>
             <div class="project-tags">
-                <span class="tag">Godot</span><span class="tag">Visual Novel</span><span class="tag">Game Jam</span><span class="tag">Cultural Impact Award</span>
+                <span class="tag">Godot</span><span class="tag">Visual Novel</span><span class="tag">Game
+                    Jam</span>
             </div>
         </div>
     </div>
@@ -40,7 +47,13 @@
         <section class="project-overview-section reveal">
             <div class="project-overview-text">
                 <h2>Overview</h2>
-                <p>Ashes of Hope is a visual novel made in 10 days for SheJam, my first game jam, where it won the Cultural Impact award. Team of 3: me, Leen (developer, also from Jordan), and a Turkish artist we met through the jam's Discord. The jam theme was "Start from Zero. Rebuild. Reimagine. Rise." Our story followed a post-war family that had lost everything but kept finding ways to rebuild and hope again.</p>
+                <p>Ashes of Hope is a visual novel made in 10 days for SheJam, my first game jam, where it won the
+                    Cultural Impact award. Team of 3: me, Leen (developer, also from Jordan), and a Turkish artist we
+                    met through the jam's Discord. The jam theme was "Start from Zero. Rebuild. Reimagine. Rise." Our
+                    story followed a post-war family that had lost everything but kept finding ways to rebuild and hope
+                    again.</p>
+                <a href="https://lilithofthevalley.itch.io/ashes-of-hope" class="btn btn-primary" target="_blank"
+                    style="margin-top: 15px; width: max-content;">Play the game</a>
             </div>
             <div class="project-overview-video">
                 <video autoplay muted loop playsinline>
@@ -53,13 +66,19 @@
             <div class="project-section-inner split-text">
                 <div class="project-text-col">
                     <h2>My Role and Responsibilities</h2>
-                    <p>I built the game's core systems: the dialogue logic, the scene structure, and the settings/pause menu. Leen handled art integration, mini-games, and polish. I also wrote the dialogue and came up with the game's title.</p>
+                    <p>I built the game's core systems: the dialogue logic, the scene structure, and the settings/pause
+                        menu. Leen handled art integration, mini-games, and polish. I also wrote the dialogue and came
+                        up with the game's title.</p>
                 </div>
                 <div class="project-text-col">
                     <h2>Tools &amp; Time</h2>
-                    <p><strong>Tools:</strong> Godot, GDScript, JSON (for dialogue data), Git/GitHub, Gemini, Discord.</p>
-                    <p><strong>Time:</strong> 10 days total, but real development only started around day 6 — we lost the first days to procrastination and not having a clear plan.</p>
-                    <p><strong>Team Collab:</strong> Met the team through Discord for the jam. Coordinating through Git was rough since I was still new to branching and merging, so I ran into conflicts merging my work with Leen's.</p>
+                    <p><strong>Tools:</strong> Godot, GDScript, JSON (for dialogue data), Git/GitHub, Gemini, Discord.
+                    </p>
+                    <p><strong>Time:</strong> 10 days total, but real development only started around day 6, we lost
+                        the first days to procrastination and not having a clear plan.</p>
+                    <p><strong>Team Collab:</strong> Met the team through Discord for the jam. Coordinating through Git
+                        was rough since I was still new to branching and merging, so I ran into conflicts merging my
+                        work with Leen's.</p>
                 </div>
             </div>
         </section>
@@ -68,31 +87,36 @@
             <div class="project-section-inner">
                 <div class="project-text-col">
                     <h2>Process &amp; Breakdown</h2>
-                    <p>I started by writing the core script system: how dialogue moves letter by letter, and how it pulls from JSON files through a global config_handler script that also controlled the settings and pause menu. I split music and sound effects using audio buses. Once the dialogue logic worked on one level, I built out the rest of the levels and the transitions between them.</p>
-                    <ul>
-                        <li>Dialogue system: JSON-driven, letter-by-letter text</li>
-                        <li>Global ConfigHandler script: settings, pause menu, dialogue control</li>
-                        <li>Audio: separate buses for SFX and music</li>
-                        <li>Levels: built one first to test the system, then the rest</li>
-                    </ul>
+                    <p>I started by writing the core script system: how dialogue moves letter by letter, and how it
+                        pulls from JSON files through a global config_handler script that also controlled the settings
+                        and pause menu. I split music and sound effects using audio buses. Once the dialogue logic
+                        worked on one level, I built out the rest of the levels and the transitions between them.</p>
                 </div>
                 <div class="project-media-col">
                     <div class="project-media-gallery multi">
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Process & Breakdown/dialouge_logic_making1.png" alt="Dialogue logic step 1"></div>
-                            <span class="media-label">Building the dialogue system — step 1</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Process & Breakdown/dialouge_logic_making1.png"
+                                    alt="Dialogue logic step 1"></div>
+                            <span class="media-label">Dialogue code snapshot</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Process & Breakdown/dialouge_logic_making2.png" alt="Dialogue logic step 2"></div>
-                            <span class="media-label">Building the dialogue system — step 2</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Process & Breakdown/dialouge_logic_making2.png"
+                                    alt="Dialogue logic step 2"></div>
+                            <span class="media-label">Dialogue system snapshot</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Process & Breakdown/json_files_structure.png" alt="JSON files structure"></div>
-                            <span class="media-label">JSON dialogue data structure</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Process & Breakdown/json_files_structure.png"
+                                    alt="JSON files structure"></div>
+                            <span class="media-label">JSON files structure</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Process & Breakdown/settings_making.png" alt="Settings menu making"></div>
-                            <span class="media-label">Settings and pause menu system</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Process & Breakdown/settings_making.png"
+                                    alt="Settings menu making"></div>
+                            <span class="media-label">Settings scene snapshot</span>
                         </div>
                     </div>
                 </div>
@@ -104,15 +128,18 @@
                 <div class="project-text-col">
                     <h2>Challenges and Problems Solved</h2>
                     <ul>
-                        <li>Git merge conflicts from being new to branching — pushed me to actually learn how branches and merges work</li>
-                        <li>Time pressure meant no time left for transition animations or a fully polished ending scene</li>
+                        <li>Git merge conflicts from being new to branching.</li>
+                        <li>Time pressure meant no time left for transition animations or a fully polished ending scene
+                        </li>
                     </ul>
                 </div>
                 <div class="project-media-col">
                     <div class="project-media-gallery single">
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Challenges and Problems Solved/only_4_branshes.png" alt="Only 4 branches used"></div>
-                            <span class="media-label">Only 4 branches used — still new to Git branching</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/Challenges and Problems Solved/only_4_branshes.png"
+                                    alt="Only 4 branches used"></div>
+                            <span class="media-label">Only 4 branches used</span>
                         </div>
                     </div>
                 </div>
@@ -123,13 +150,17 @@
             <div class="project-section-inner">
                 <div class="project-text-col">
                     <h2>My Impact &amp; Decisions</h2>
-                    <p>I shaped the actual story, wrote all the dialogue, and came up with the title. We reworked the original war-focused concept into a story about resilience and rebuilding, to fit the competition's rules and the art style.</p>
+                    <p>I shaped the actual story, wrote all the dialogue, and came up with the title. We reworked the
+                        original war-focused concept into a story about resilience and rebuilding, to fit the
+                        competition's rules and the art style.</p>
                 </div>
                 <div class="project-media-col">
                     <div class="project-media-gallery single">
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/My Impact & Decisions/Screenshot 2026-09-30 232943.png" alt="Game screenshot"></div>
-                            <span class="media-label">Cultural Impact Award — in-game screenshot</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/ashesofhope_page/My Impact & Decisions/Screenshot 2026-09-30 232943.png"
+                                    alt="Game screenshot"></div>
+                            <span class="media-label">Narrative snapshot</span>
                         </div>
                     </div>
                 </div>
@@ -164,32 +195,47 @@
 
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
-        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
     </aside>
 
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-brand">
-                <a href="../../../index.html" class="footer-logo"><span class="footer-logo-badge"><img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi" class="footer-logo-img"></span><span>Dema AL-Jundi</span></a>
-                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay systems, and interactive problem solving.</p>
+                <a href="../../../index.html" class="footer-logo"><span class="footer-logo-badge"><img
+                            src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi"
+                            class="footer-logo-img"></span><span>Dema AL-Jundi</span></a>
+                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay
+                    systems, and interactive problem solving.</p>
             </div>
-            <div class="footer-col"><h3>Quick Links</h3><ul class="footer-links">
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../../main_pages/about.html">About me</a></li>
-                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
-                <li><a href="../../main_pages/experience.html">Experience</a></li>
-                <li><a href="../../main_pages/skills.html">Skills</a></li>
-                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
-            </ul></div>
-            <div class="footer-col"><h3>Connect</h3><ul class="footer-links">
-                <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-itch-io"></i> Itch.io</a></li>
-                <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-            </ul></div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../main_pages/about.html">About me</a></li>
+                    <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../../main_pages/experience.html">Experience</a></li>
+                    <li><a href="../../main_pages/skills.html">Skills</a></li>
+                    <li><a href="../../../Dima_Aljundi_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                    <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom-left">&copy; 2026 Dema AL-Jundi. All rights reserved.</div>
@@ -199,9 +245,10 @@
 
     <script src="../../../js/script.js"></script>
     <script>
-        function openMedia(el){const frame=el.querySelector('.project-media-frame');const img=frame?frame.querySelector('img'):null;const vid=frame?frame.querySelector('video'):null;const modal=document.getElementById('mediaModal');const modalImg=document.getElementById('modalImg');const modalVideo=document.getElementById('modalVideo');if(img){modalImg.src=img.src;modalImg.style.display='block';modalVideo.style.display='none';modalVideo.innerHTML='';}else if(vid){const s=vid.querySelector('source');modalVideo.innerHTML=`<source src="${s?s.src:vid.src}" type="video/mp4">`;modalVideo.style.display='block';modalImg.style.display='none';modalImg.src='';modalVideo.load();modalVideo.play();}modal.classList.add('show');document.body.style.overflow='hidden';}
-        function closeModal(){const m=document.getElementById('mediaModal');m.classList.remove('show');document.getElementById('modalVideo').pause();document.getElementById('modalVideo').innerHTML='';document.getElementById('modalImg').src='';document.body.style.overflow='';}
-        document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+        function openMedia(el) { const frame = el.querySelector('.project-media-frame'); const img = frame ? frame.querySelector('img') : null; const vid = frame ? frame.querySelector('video') : null; const modal = document.getElementById('mediaModal'); const modalImg = document.getElementById('modalImg'); const modalVideo = document.getElementById('modalVideo'); if (img) { modalImg.src = img.src; modalImg.style.display = 'block'; modalVideo.style.display = 'none'; modalVideo.innerHTML = ''; } else if (vid) { const s = vid.querySelector('source'); modalVideo.innerHTML = `<source src="${s ? s.src : vid.src}" type="video/mp4">`; modalVideo.style.display = 'block'; modalImg.style.display = 'none'; modalImg.src = ''; modalVideo.load(); modalVideo.play(); } modal.classList.add('show'); document.body.style.overflow = 'hidden'; }
+        function closeModal() { const m = document.getElementById('mediaModal'); m.classList.remove('show'); document.getElementById('modalVideo').pause(); document.getElementById('modalVideo').innerHTML = ''; document.getElementById('modalImg').src = ''; document.body.style.overflow = ''; }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
     </script>
 </body>
+
 </html>

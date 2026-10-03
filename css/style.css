@@ -1905,9 +1905,9 @@ h6 {
 }
 
 .project-media-gallery.multi {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 24px;
+    column-width: 260px;
+    column-gap: 24px;
+    display: block;
 }
 
 .project-media-gallery.single {
@@ -1919,6 +1919,8 @@ h6 {
     flex-direction: column;
     gap: 10px;
     cursor: pointer;
+    break-inside: avoid;
+    margin-bottom: 24px;
 }
 
 .project-media-item:hover .project-media-frame {

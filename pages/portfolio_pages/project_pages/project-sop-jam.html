@@ -1,24 +1,30 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sop Game Jam 2026 - Project</title>
-    <meta name="description" content="Sop Game Jam 2026 — my first solo game jam, a 3D interrogation game: figure out if the person in front of you is human or AI.">
+    <meta name="description"
+        content="Sop Game Jam 2026 â€” my first solo game jam, a 3D interrogation game: figure out if the person in front of you is human or AI.">
     <link rel="icon" type="image/png" href="../../../Images/Main_page_images/Logo.png">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header">
-        <a href="../../../index.html" class="logo" aria-label="Home"><img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img"></a>
-        <nav class="nav-bar"><ul>
-            <li><a href="../../main_pages/about.html">About me</a></li>
-            <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../../main_pages/experience.html">Experience</a></li>
-            <li><a href="../../main_pages/skills.html">Skills</a></li>
-            <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
-        </ul></nav>
+        <a href="../../../index.html" class="logo" aria-label="Home"><img
+                src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi Logo" class="logo-img"></a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../../main_pages/about.html">About me</a></li>
+                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../../main_pages/experience.html">Experience</a></li>
+                <li><a href="../../main_pages/skills.html">Skills</a></li>
+                <li><a href="../../../Dima_Aljundi_Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="project-video-hero">
@@ -30,7 +36,8 @@
             <a href="../projects.html" class="back-link">&larr; Back to Projects</a>
             <h1>Sop Game Jam 2026</h1>
             <div class="project-tags">
-                <span class="tag">Godot</span><span class="tag">3D</span><span class="tag">Solo</span><span class="tag">Game Jam</span>
+                <span class="tag">Godot</span><span class="tag">3D</span><span class="tag">Solo</span><span
+                    class="tag">Game Jam</span>
             </div>
         </div>
     </div>
@@ -40,7 +47,9 @@
         <section class="project-overview-section reveal">
             <div class="project-overview-text">
                 <h2>Overview</h2>
-                <p>This was my first solo game jam — Sop Game Jam 2026, theme "the critical point," 5 days, built in Godot 3D. Inspired by Buckshot Roulette, the concept: figure out if the person across from you is human or AI by pushing them to their breaking point.</p>
+                <p>This was my first solo game jam (Sop Game Jam 2026, theme "the critical point") 5 days, built in
+                    Godot 3D. Inspired by Buckshot Roulette, the concept: figure out if the person across from you is
+                    human or AI by pushing them to their breaking point.</p>
             </div>
             <div class="project-overview-video">
                 <video autoplay muted loop playsinline>
@@ -53,7 +62,7 @@
             <div class="project-section-inner">
                 <div class="project-text-col">
                     <h2>My Role and Responsibilities</h2>
-                    <p>Solo project — everything: design, systems, dialogue, sound.</p>
+                    <p>Everything: design, systems, dialogue, sound.</p>
                 </div>
             </div>
         </section>
@@ -62,28 +71,43 @@
             <div class="project-section-inner">
                 <div class="project-text-col">
                     <h2>Process &amp; Breakdown</h2>
-                    <p>I kept the whole game in a single scene (a room, character, and table) on purpose, so I wouldn't burn time building environments and could focus entirely on the core idea. Started with minimal left/right camera movement, then built interactable item logic and character dialogue.</p>
+                    <p>I kept the whole game in a single scene (a room, character, and table) on purpose, so I wouldn't
+                        burn time building environments and could focus entirely on the core idea. Started with minimal
+                        left/right camera movement, then built interactable item logic and character dialogue.</p>
+                    <p>Items on table are: </p>
                     <ul>
-                        <li>A paper prop gives hints indirectly instead of stating rules outright — the player has to work it out</li>
-                        <li>Core loop: ask emotional or logical questions within a 90-second timer to push the subject to their critical point</li>
-                        <li>Breaking an AI needs Emotional → Logical → Emotional → Logical (confuses it)</li>
-                        <li>Breaking a human needs Emotional → Emotional → Logical → Logical (anger builds, then a sudden shift catches them off guard)</li>
-                        <li>A monitor shows heartbeat and temperature as a secondary read — though an AI subject can manipulate that too</li>
-                        <li>After the timer: give a flower (human) or shoot (AI) — right call gives a true ending, wrong call gives a bad ending</li>
+                        <li>A paper prop gives hints indirectly instead of stating rules outright, the player has to
+                            work it out.</li>
+                        <li>Detector: ask emotional or logical questions within a 90-second timer to push the
+                            subject
+                            to their critical point and know whether they are human or AI.</li>
+                        <li>Breaking an AI needs Emotional â†’ Logical â†’ Emotional â†’ Logical (confuses it).</li>
+                        <li>Breaking a human needs Emotional â†’ Emotional â†’ Logical â†’ Logical (Humans do not like when
+                            you act as if you did not say something deep).</li>
+                        <li>A monitor shows heartbeat and temperature as a secondary read, an AI subject can
+                            manipulate that too.</li>
+                        <li>After the timer: give a flower (human) or shoot (AI) , the right call gives a true ending,
+                            wrong call gives a bad ending.</li>
                     </ul>
                 </div>
                 <div class="project-media-col">
                     <div class="project-media-gallery multi">
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Process & Breakdown/final_scenes_making.png" alt="Final scenes making"></div>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Process & Breakdown/final_scenes_making.png"
+                                    alt="Final scenes making"></div>
                             <span class="media-label">Building the ending scenes</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Process & Breakdown/noise_shader_making.png" alt="Noise shader"></div>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Process & Breakdown/noise_shader_making.png"
+                                    alt="Noise shader"></div>
                             <span class="media-label">Noise shader on the monitor screen</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Process & Breakdown/scene_before_adjustments.png" alt="Scene before adjustments"></div>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Process & Breakdown/scene_before_adjustments.png"
+                                    alt="Scene before adjustments"></div>
                             <span class="media-label">Room scene before final adjustments</span>
                         </div>
                     </div>
@@ -96,24 +120,35 @@
                 <div class="project-text-col">
                     <h2>Challenges and Problems Solved</h2>
                     <ul>
-                        <li>Didn't document much early on, which let ideas blur together and contradict each other</li>
-                        <li>The game manager ended up as a long chain of if/else statements — recognized afterward that this wasn't a good way to structure it</li>
-                        <li>Scope crept steadily even though the starting idea was simple, which ate into time meant for testing</li>
+                        <li>Didn't document much early on, which let ideas blur together and contradict each other.</li>
+                        <li>The game manager ended up as a long chain of if/else statements , this game has a lot of
+                            conditions so it needs better architecture.</li>
+                        <li>Scope crept even though the starting idea was simple, which ate into time meant for
+                            testing.</li>
+                        <li>I tried to make the character hold a gun and make shoot animation , but failed at making it
+                            hold the gun right in right direction in run time even though it is working in editor. I
+                            cancelled the idea to focus on more important things since i did not have much time.</li>
                     </ul>
                 </div>
                 <div class="project-media-col">
                     <div class="project-media-gallery multi">
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Challenges and Problems Solved/gamemanager.png" alt="Game manager if/else chain"></div>
-                            <span class="media-label">Long if/else chain in the game manager</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Challenges and Problems Solved/gamemanager.png"
+                                    alt="Game manager if/else chain"></div>
+                            <span class="media-label">Game manager snapshot</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Challenges and Problems Solved/animation_problem.png" alt="Animation problem"></div>
-                            <span class="media-label">Character animation bug</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Challenges and Problems Solved/animation_problem.png"
+                                    alt="Animation problem"></div>
+                            <span class="media-label">Character animation idea</span>
                         </div>
                         <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame"><img src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Challenges and Problems Solved/screen_lines_problem.png" alt="Screen rendering issue"></div>
-                            <span class="media-label">Monitor screen rendering lines glitch</span>
+                            <div class="project-media-frame"><img
+                                    src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/Challenges and Problems Solved/screen_lines_problem.png"
+                                    alt="Screen rendering issue"></div>
+                            <span class="media-label">Monitor screen lines before lots of fixes</span>
                         </div>
                     </div>
                 </div>
@@ -121,35 +156,22 @@
         </section>
 
         <section class="project-section reveal">
-            <div class="project-section-inner">
+            <div class="project-section-inner split-text">
                 <div class="project-text-col">
                     <h2>Decisions</h2>
-                    <p>Deliberately built as one scene to protect time for the core mechanic instead of environment art — a good call given the 5-day limit, even though the mechanic itself still grew bigger than planned.</p>
+                    <p>Deliberately built as one scene to protect time, a good call given the 5-day limit,
+                        even though the mechanic itself still grew bigger than
+                        planned.</p>
                 </div>
-                <div class="project-media-col">
-                    <div class="project-media-gallery single">
-                        <div class="project-media-item" onclick="openMedia(this)">
-                            <div class="project-media-frame">
-                                <video autoplay muted loop playsinline>
-                                    <source src="../../../Images/Portfolio_images/Projects/content_images_and_videos/thermalpanic_page/gameplay.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <span class="media-label">Gameplay footage — interrogation scene</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-section reveal">
-            <div class="project-section-inner">
                 <div class="project-text-col">
                     <h2>Lessons Learned</h2>
                     <ul>
-                        <li>Recognized if/else sprawl in a game manager as a bad pattern to avoid next time</li>
-                        <li>Scope creep can happen even after deliberately keeping the concept simple — watch it constantly</li>
-                        <li>Skipping documentation early causes ideas to blur and contradict each other later</li>
-                        <li>Ran out of time for real playtesting and balance because design/rule-writing took longer than expected</li>
+                        <li>Game manager should be written carefully in games where there are multiple conditions.</li>
+                        <li>Scope creep can happen even after deliberately keeping the concept simple, watch it
+                            constantly.</li>
+                        <li>Skipping documentation early causes ideas to blur and contradict each other later.</li>
+                        <li>Games that needs complex design balancing needs also lots of playtesting so avoid it in
+                            solo, tight timeline jams.</li>
                     </ul>
                 </div>
             </div>
@@ -167,32 +189,47 @@
 
     <aside class="social-links">
         <a href="https://github.com/Demxz0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i class="fa-brands fa-itch-io"></i></a>
-        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://demxz0-o.itch.io/" target="_blank" aria-label="Itch.io"><i
+                class="fa-brands fa-itch-io"></i></a>
+        <a href="https://www.instagram.com/gamxz0_o/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
     </aside>
 
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-brand">
-                <a href="../../../index.html" class="footer-logo"><span class="footer-logo-badge"><img src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi" class="footer-logo-img"></span><span>Dema AL-Jundi</span></a>
-                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay systems, and interactive problem solving.</p>
+                <a href="../../../index.html" class="footer-logo"><span class="footer-logo-badge"><img
+                            src="../../../Images/Main_page_images/Logo.png" alt="Dema AL-Jundi"
+                            class="footer-logo-img"></span><span>Dema AL-Jundi</span></a>
+                <p class="footer-bio">Software engineer specializing in game development and design, structured gameplay
+                    systems, and interactive problem solving.</p>
             </div>
-            <div class="footer-col"><h3>Quick Links</h3><ul class="footer-links">
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../../main_pages/about.html">About me</a></li>
-                <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
-                <li><a href="../../main_pages/experience.html">Experience</a></li>
-                <li><a href="../../main_pages/skills.html">Skills</a></li>
-                <li><a href="../../../resume.pdf" target="_blank">Resume</a></li>
-            </ul></div>
-            <div class="footer-col"><h3>Connect</h3><ul class="footer-links">
-                <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-itch-io"></i> Itch.io</a></li>
-                <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-            </ul></div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../main_pages/about.html">About me</a></li>
+                    <li><a href="../../main_pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../../main_pages/experience.html">Experience</a></li>
+                    <li><a href="../../main_pages/skills.html">Skills</a></li>
+                    <li><a href="../../../Dima_Aljundi_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Demxz0" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="https://demxz0-o.itch.io/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-itch-io"></i> Itch.io</a></li>
+                    <li><a href="https://www.linkedin.com/in/dima-aljundi" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/gamxz0_o/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom-left">&copy; 2026 Dema AL-Jundi. All rights reserved.</div>
@@ -202,9 +239,10 @@
 
     <script src="../../../js/script.js"></script>
     <script>
-        function openMedia(el){const frame=el.querySelector('.project-media-frame');const img=frame?frame.querySelector('img'):null;const vid=frame?frame.querySelector('video'):null;const modal=document.getElementById('mediaModal');const modalImg=document.getElementById('modalImg');const modalVideo=document.getElementById('modalVideo');if(img){modalImg.src=img.src;modalImg.style.display='block';modalVideo.style.display='none';modalVideo.innerHTML='';}else if(vid){const s=vid.querySelector('source');modalVideo.innerHTML=`<source src="${s?s.src:vid.src}" type="video/mp4">`;modalVideo.style.display='block';modalImg.style.display='none';modalImg.src='';modalVideo.load();modalVideo.play();}modal.classList.add('show');document.body.style.overflow='hidden';}
-        function closeModal(){const m=document.getElementById('mediaModal');m.classList.remove('show');document.getElementById('modalVideo').pause();document.getElementById('modalVideo').innerHTML='';document.getElementById('modalImg').src='';document.body.style.overflow='';}
-        document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+        function openMedia(el) { const frame = el.querySelector('.project-media-frame'); const img = frame ? frame.querySelector('img') : null; const vid = frame ? frame.querySelector('video') : null; const modal = document.getElementById('mediaModal'); const modalImg = document.getElementById('modalImg'); const modalVideo = document.getElementById('modalVideo'); if (img) { modalImg.src = img.src; modalImg.style.display = 'block'; modalVideo.style.display = 'none'; modalVideo.innerHTML = ''; } else if (vid) { const s = vid.querySelector('source'); modalVideo.innerHTML = `<source src="${s ? s.src : vid.src}" type="video/mp4">`; modalVideo.style.display = 'block'; modalImg.style.display = 'none'; modalImg.src = ''; modalVideo.load(); modalVideo.play(); } modal.classList.add('show'); document.body.style.overflow = 'hidden'; }
+        function closeModal() { const m = document.getElementById('mediaModal'); m.classList.remove('show'); document.getElementById('modalVideo').pause(); document.getElementById('modalVideo').innerHTML = ''; document.getElementById('modalImg').src = ''; document.body.style.overflow = ''; }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
     </script>
 </body>
+
 </html>
